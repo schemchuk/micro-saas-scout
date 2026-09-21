@@ -10,7 +10,7 @@ Each candidate gets a compact record.
 
 ## [Candidate name]
 
-**Status:** DISCOVERY / VALIDATION / KEEP / KILL / BLOCKED / INCONCLUSIVE
+**Status:** DISCOVERY (phase, pre-decision) / KEEP / TEST / KILL / BLOCKED / INCONCLUSIVE (decision states, per BASELINE.md §3)
 
 **Problem:**  
 What concrete operational problem exists?
