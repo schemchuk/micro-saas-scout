@@ -2,6 +2,11 @@
 
 These rules apply to Claude Code, Kimi, and any other research agent working in this repository.
 
+## 0. Language & Git workflow
+
+- Always communicate with the user in Ukrainian.
+- At the end of every logical block of work, the agent that performed the task must commit and push the changes to the main branch.
+
 ## 1. Optimize for decisions, not document volume
 
 Every research task must produce one of:
