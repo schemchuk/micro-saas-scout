@@ -2,8 +2,9 @@
 
 ## Scope
 
-- **Date:** 2026-09-22
-- **Method:** `BASELINE.md` §6 (Payment Plausibility Gate), operationalized per the three-check structure defined in this task (Task 05). Desk research only — official vendor pricing/signup/terms pages as primary sources for Checks 1–2; independent named-customer reviews (Capterra, G2, Shopify App Store, Trustpilot, eBay Community) traced to primary reviewer text for Check 3. No users contacted, no product built, no preorder requested, no landing page created.
+- **Date:** 2026-09-22 (initial pass); corrected 2026-09-22 (Task 05A)
+- **Method:** `BASELINE.md` §6 (Payment Plausibility Gate), operationalized per the three-check structure defined in Task 05. Desk research only — official vendor pricing/signup/terms pages as primary sources for Checks 1–2; independent named-customer reviews (Capterra, G2, Shopify App Store, Trustpilot, eBay Community) traced to primary reviewer text for Check 3. No users contacted, no product built, no preorder requested, no landing page created.
+- **Correction pass (Task 05A):** the initial pass over-read Check 1 as "the dominant incumbents must be self-serve" rather than "does a relevant paid solution exist with a self-serve path," and blended two structurally different buyers (GC / subcontractor) into one verdict for Candidate 4. Tax Practice Client Portal and eBay/Etsy Cross-Listing were re-examined with targeted, bounded follow-up research and their results changed; Construction Subcontractor Pay-App was split into two buyer-side evaluations. Insurance Commission Reconciliation and Multichannel E-Commerce Accounting Reconciliation (both already PASS) were not re-opened. See each candidate's "What changed" note below.
 - **Candidates tested:** Insurance Commission Reconciliation; Tax Practice Client Document/Engagement Workflow Portal; Multichannel E-Commerce Accounting Reconciliation; Construction Subcontractor Pay-Application & Lien-Waiver Compliance; eBay/Etsy Cross-Listing & Listing-Template Management. (The 5 candidates specified in this task's scope, out of the 12 in `DISCOVERY.md`.)
 - **Gates tested:** Payment Plausibility Gate only (`BASELINE.md` §6), all three sub-checks, for all five candidates.
 - **Gates explicitly NOT tested:** Free-Incumbent Trap (§7) — not re-tested here since all five candidates already show a paid, non-free incumbent in `DISCOVERY.md`; Switching Feasibility & Switching Destination (§8); Distribution Evidence (§9); any TAM/SAM/SOM, competitor-count, or keyword-volume analysis; ranking or scoring of any kind.
@@ -46,35 +47,38 @@ Commission Tracker's and Commission Wizard's full Terms of Service (cancellation
 
 ## Candidate 2 — Tax Practice Client Document/Engagement Workflow Portal
 
+### What changed from the previous pass
+The previous pass marked this candidate `KILL` based on Check 1, reasoning from the three dominant incumbents (TaxDome, Canopy, SmartVault) alone — all three require a sales-booked demo before purchase. Task 05A's correction makes explicit that Check 1 asks whether the *category* contains at least one relevant self-serve paid path, not whether the dominant incumbents specifically have one. Financial Cents — already identified in the original pass as a smaller specialist vendor with real named customers, but whose own payment mechanism had never been checked — was verified directly this pass and found to have a genuine, vendor-documented self-serve trial-to-paid checkout. This reverses Check 1, and with it the candidate-level result, from `KILL` to `PASS`.
+
 ### Buyer
-Small US tax preparation/accounting firms (solo practitioners up to small teams) — owners, partners, bookkeepers, staff accountants selecting practice-management/client-portal software.
+(unchanged) Small US tax preparation/accounting firms (solo practitioners up to small teams) — owners, partners, bookkeepers, staff accountants selecting practice-management/client-portal software.
 
 ### Existing paid solution
-TaxDome (taxdome.com), Canopy (getcanopy.com), SmartVault (smartvault.com); Financial Cents (financialcents.com) as a smaller specialist alternative.
+TaxDome (taxdome.com), Canopy (getcanopy.com), SmartVault (smartvault.com) — all confirmed demo-gated in the original pass, not re-researched here. **Financial Cents** (financial-cents.com — note: the live domain is hyphenated; `financialcents.com` redirects to it) — verified this pass as a genuine self-serve alternative.
 
 ### Check 1 — Visible self-serve pricing
-- **Evidence:** All three major incumbents publish exact, non-negotiated prices — TaxDome: Essentials $800/yr, Pro $1,000/yr, Business $1,200/yr (1-yr commitment; page confirms "we do not negotiate on pricing"); Canopy: $74–149/user/mo; SmartVault: $55–85/user/mo (2–3 user minimums). But **every plan-selection CTA on all three pricing pages is a demo/sales-contact button**, not a buy button: TaxDome's own Help Center documents the actual process verbatim — "Click Contact sales. Complete the form to book a one-on-one demo with our team... When you're ready to move forward, you can configure the platform yourself." Canopy's CTA is "GET A DEMO" with FAQ text "Schedule a demo and talk with a sales representative to set up a trial." SmartVault's CTAs are "Book A Demo" / "Request A Trial." None of the three shows a working self-serve checkout button on the pricing page itself. A third-party mention of an instant-signup flow at app.taxdome.com/signup was found but not independently verified and conflicts with TaxDome's own documented process — treated as unconfirmed, not used as positive evidence.
-- **Sources:** taxdome.com/pricing (primary, page `modified_time` 2026-08-14); help.taxdome.com/article/187-taxdome-pricing-faq and /article/72-firm-registration (primary, vendor help center); getcanopy.com/pricing (primary); smartvault.com/pricing (primary) — all accessed 2026-09-22.
-- **Decision: FAIL** — this is the exact "contact sales despite a published, non-negotiable price" pattern the task instructs not to treat as self-serve. All three primary incumbents checked require a vendor-initiated demo/sales conversation before a purchase can occur, even for a single-seat solo buyer.
+- **Evidence:** Financial Cents' own pricing page (financial-cents.com/pricing, accessed 2026-09-22, page shows "Last Modified: September 10, 2026") publishes exact tiers: Solo $19/mo (1 user, "Cannot add additional users"), Team $49/user/mo annual ($69 monthly), Scale $69/user/mo annual ($89 monthly, "Most Popular"), Enterprise custom/"Contact sales." The homepage CTA "Start your 14-day free trial" links directly to a registration form (app.financial-cents.com/register/), with copy stating: "start a 14-day free trial with just your details and company info. No credit card required, no demo required, no sales call required." Financial Cents' own Help Center article ("How do I Subscribe to a monthly or Annual Plan?") documents the exact in-app self-serve checkout: "You can subscribe by going to Settings > Billing > Subscribe... you will need to input your card... You do not have to reach out to the support team to buy more users." A separate "Book a demo" CTA also exists on the site but coexists with, rather than replaces, the self-serve trial path.
+- **Sources:** financial-cents.com/pricing (primary, 2026-09-22, "Last Modified: September 10, 2026"); financial-cents.com/ (primary, 2026-09-22); help.financial-cents.com/en/articles/6295938-how-do-i-subscribe-to-a-monthly-or-annual-plan (primary, vendor help center, 2026-09-22); help.financial-cents.com/en/articles/6079564-pricing-faq-s (primary, 2026-09-22).
+- **Decision: PASS** — a relevant, named specialist vendor in this category has a genuine, vendor-documented self-serve trial-to-paid path (registration with no card required, then in-app card entry with no sales conversation required), distinct from the "contact sales" pattern found at TaxDome/Canopy/SmartVault.
 
 ### Check 2 — Independent purchase
-- **Evidence:** TaxDome's Essentials tier is explicitly capped at 1 seat ("solo users only"), with no stated minimum beyond that, and no mandatory paid onboarding fee (onboarding described as free). A solo owner has full authority to decide and pay for TaxDome without needing organizational approval, a procurement committee, or a security certification — the only friction is the demo-booking step already captured under Check 1. SmartVault requires a 2–3 user minimum on some tiers, a mild structural constraint for a true solo practitioner but not a procurement barrier per se.
-- **Sources:** help.taxdome.com/article/187-taxdome-pricing-faq (primary); smartvault.com/pricing (primary) — accessed 2026-09-22.
-- **Decision: PASS** — no minimum firm size, committee approval, or certification requirement was found; the purchase decision itself rests with the individual buyer, distinct from the self-serve-mechanism question already resolved as FAIL under Check 1.
+- **Evidence:** The Solo plan is capped at, and explicitly designed for, 1 user — no minimum-seat barrier for a solo buyer. No mandatory onboarding call or setup fee was found for the standard (Solo/Team/Scale) plans; only Enterprise requires "Contact sales." One real friction point was found: "All plans are a 12-month agreement," and monthly billing is gated to firms with 5+ users — a 1–4-user firm (i.e., most solo/small buyers) must prepay annually to get the advertised rate. This is a contract-term/prepayment constraint, not a procurement, certification, or third-party-approval barrier — the buyer still decides and completes the purchase alone, via self-serve checkout.
+- **Sources:** help.financial-cents.com/en/articles/6079564-pricing-faq-s (primary, 2026-09-22).
+- **Decision: PASS**, with the 12-month-agreement / 5-seat-monthly-minimum terms recorded as friction, not a structural purchasing barrier of the kind this check targets.
 
 ### Check 3 — Small/specialist vendor purchase precedent
-- **Evidence:** Financial Cents (a smaller, specialist vendor relative to TaxDome/Canopy) has multiple named, dated 2025 Capterra reviews describing genuine hands-on paid use: Megan C., Principal Owner, Oct 31 2025, 5.0★: "Have used tax dome in the past but felt Financial Cents better fit our needs and was more flexible with better features and price" — an explicit, named switch away from the category's dominant incumbent; Angeliese W., Owner/Founder, Sept 19 2025, describing specific operational usage (document management, client communication, recurring templates); David B., Partner, Sept 19 2025, "Used the software for: 1-2 years," describing specific product friction consistent with real multi-year paid use.
-- **Sources:** capterra.com/p/186837/Financial-Cents/reviews/ (primary named reviewer testimony hosted on secondary platform, page footer "Last updated August 26th, 2026") — accessed 2026-09-22.
-- **Decision: PASS**
+- **Evidence:** Unchanged from the original pass — Financial Cents has multiple named, dated 2025 Capterra reviews confirming real paid use, including Megan C. (Principal Owner, Oct 31 2025, 5.0★): "Have used tax dome in the past but felt Financial Cents better fit our needs and was more flexible with better features and price" — an explicit, named switch away from the category's dominant incumbent. No contradicting evidence found this pass.
+- **Sources:** capterra.com/p/186837/Financial-Cents/reviews/ (primary named reviewer testimony, previously verified 2026-09-22).
+- **Decision: PASS** (unchanged)
 
 ### Gate result
-**KILL**
+**PASS** (corrected from `KILL`)
 
 ### Reason
-Check 1 fails: the category's dominant, named incumbents (TaxDome, Canopy, SmartVault) all publish transparent, fixed pricing but gate the actual purchase behind a mandatory vendor-initiated sales/demo conversation, confirmed directly from TaxDome's own help documentation. Per gate logic, a Check 1 failure is a KILL regardless of the other checks' results — this is a textbook instance of the "real existing spending, but no credible self-serve payment mechanism" pattern the gate exists to catch.
+The prior `KILL` conflated "the dominant incumbents are sales-gated" with "no relevant self-serve path exists in the category." Financial Cents — already established under Check 3 as having real named paying customers — was directly verified this pass to have a genuine, vendor-documented self-serve trial-to-paid checkout requiring no sales conversation, which reverses Check 1 and, with it, the candidate-level result.
 
 ### Remaining unknowns
-Financial Cents' own pricing/signup mechanism was not independently checked this pass — it is possible a genuinely self-serve paid option exists in this category via Financial Cents or another smaller player, which would need direct verification (its own pricing page and signup flow) before this KILL could be revisited with materially new evidence, per `DECISION.md`'s reopening rule.
+The exact registration-form fields at app.financial-cents.com/register/ were not directly observed (the fetch tool was blocked, HTTP 403) — the self-serve claim rests on the vendor's own marketing copy plus its documented in-app billing flow, not a directly observed live signup. Whether the 12-month-agreement / 5-seat-monthly-minimum terms meaningfully deter real solo buyers in practice (versus a true no-commitment monthly product) was not tested.
 
 ---
 
@@ -114,69 +118,111 @@ The literal checkout/payment-collection page for both A2X and Link My Books was 
 
 ## Candidate 4 — Construction Subcontractor Pay-Application & Lien-Waiver Compliance
 
+### What changed from the previous pass
+The previous pass evaluated this candidate as one buyer and reached a single `KILL` (Check 1 and Check 2 both failed, using GC-side evidence — GCPay, Siteline's quote-only pricing, and the GC-mandate structure — as if it applied to the whole candidate). Task 05A's correction requires GC-side and subcontractor-side purchasing to be evaluated as two separate buyer-side payment structures, since they are economically distinct. This pass re-verifies the GC-side evidence directly (confirming the prior `KILL` for that side) and separately investigates whether a subcontractor can independently buy a *relevant* self-serve tool — finding a more mixed, still-open picture for that side, not a clean `KILL`.
+
 ### Buyer
-General contractors (GCs) and subcontractors on commercial construction projects, per `DISCOVERY.md`'s dual-sided buyer definition.
+Split explicitly below into GC-side and subcontractor-side, per the correction.
 
 ### Existing paid solution
-GCPay (Autodesk-owned, GC-side), Siteline (subcontractor-side billing), Built Technologies (getbuilt.com — construction finance/lien waivers).
+GC-side: GCPay (Autodesk-owned), Built Technologies (getbuilt.com). Subcontractor-side: Siteline (siteline.com, quote-only, confirmed unchanged); Payapps (payapps.com — newly identified, genuine self-serve list pricing, checkout mechanism unconfirmed); Levelset (levelset.com — self-serve pricing exists but for an adjacent problem, sales-gated for the core lien-waiver/pay-app scope).
 
-### Check 1 — Visible self-serve pricing
-- **Evidence:** GCPay's own pricing page shows no price at all — exact text: "Custom pricing tailored to your business needs," "Only pay for the volume of projects that you're managing with subcontractors," CTA "Book Demo"/"Get Started." Capterra corroborates: "Contact vendor for pricing," no free trial. Siteline's own pricing page likewise shows no price — "We work with our customers to offer pricing that best suits their product usage, billing volume, and integration needs," gated behind a multi-step "Get a custom quote" form. Built Technologies is a partial exception: it publishes one concrete figure ("Lien Waiver Management $1,000/month" for a standalone tier, discounts "when processing payments"), but no self-serve checkout/buy button was found for this tier — the mechanism to actually purchase it was not confirmed as self-serve.
-- **Sources:** ww3.gcpay.com/pricing-for-general-contractors/ (primary, 2026-09-22); capterra.com/p/182990/GCPAY/pricing/ (secondary, "last updated August 26, 2026"); siteline.com/pricing (primary, 2026-09-22); getbuilt.com/products/lien-waiver-management-payments/ (primary, 2026-09-22).
-- **Decision: FAIL** — the two most central, named incumbents for this candidate (GCPay, Siteline) are both pure quote-only/custom-pricing, with zero published price and a mandatory custom-quote request process; the one vendor with a published number (Built) has no confirmed self-serve purchase path for it.
+---
 
-### Check 2 — Independent purchase
-- **Evidence:** This candidate carries a specific, confirmed structural risk. GCPay's own help-center documentation describes a per-transaction "$15 fee" on its ePayments & Lien Waiver Exchange, with a GC-side setting to "take on the $15 fee instead of passing it on to the subcontractor" — confirming the **GC is the account-holder/decision-maker**, who can unilaterally choose to pass a fee to subs who did not choose the platform. An independent industry blog (LienDone, May 10 2026) states directly: "Subs have to create an account in your pay-app system before they can sign. That's fine for the 10 subs who do every job with you. It's friction for the 50 specialty subs who you use once" — describing subs as compelled into whatever system the GC selects, not making an independent purchase decision of their own. Built Technologies shows the identical pattern ("General Contractors/project owners pay for the software subscription... Subcontractors... get free vendor accounts with no login required"). Siteline is the documented counter-case: its own FAQ contains the entry "Our GC requires us to use Textura, why would I add Siteline?" — Siteline's own site confirming the GC-mandate pattern is common enough to build a product around, positioning itself as a tool the **subcontractor independently chooses and pays for** specifically to cope with being mandated onto GC-chosen portals.
-- **Sources:** help.gcpay.com (primary, vendor support doc, 2026-09-22); liendone.com/blog/what-is-gc-pay (secondary, named industry blog, dated 2026-05-10); getbuilt.com (primary, 2026-09-22); siteline.com/faq (primary, 2026-09-22).
-- **Decision: FAIL** — for the GC-side pattern that dominates this candidate's named incumbents (GCPay, Built), the subcontractor half of the identified buyer cannot independently choose or purchase; participation is mandated by the GC, and the GC itself purchases only through the custom-quote sales process already found under Check 1. Siteline's sub-independent pattern is real but is a workaround to the structural barrier, not evidence the barrier doesn't exist for the core GC-mandated workflow this candidate's problem domain describes.
+### A. GC-side buyer
 
-### Check 3 — Small/specialist vendor purchase precedent
-- **Evidence:** Both Siteline and Built Technologies have real, named, dated 2025–2026 Capterra reviews from individuals in construction roles, confirming actual paying/using customers exist independent of vendor marketing — Siteline: Jordan C., Owner/President, May 12 2025, 5.0★, "transformed the way my company processed billings"; Veronica C., Accounting Manager, May 6 2025; McKenzie P., Administrative Director, May 6 2025, switched from Sage 100. Built: Ben S., CEO, July 3 2026 (negative); Sarah M., Office Assistant, July 10 2025 (negative but confirms active real use).
-- **Sources:** capterra.com/p/252004/Siteline/ (primary, 2026-09-22); capterra.com/p/159434/Built/reviews/ (primary, 2026-09-22).
+#### Check 1 — Visible self-serve pricing
+- **Evidence:** GCPay's own current pricing page (ww3.gcpay.com/pricing-for-general-contractors/, re-fetched 2026-09-22) confirms, unchanged: "Custom pricing tailored to your business needs," no published price, CTAs are "Book Demo"/"Get Started" only. Built Technologies publishes one figure ("Lien Waiver Management $1,000/month"), but its actual signup path (getbuilt.com/lien-waiver-management-create-account/) reads "Get started – it's free. No credit card needed" — the live self-serve signup onboards into the **free** product, not a $1,000/mo checkout; the $1,000/mo tier's purchase mechanism remains unconfirmed as self-serve.
+- **Sources:** ww3.gcpay.com/pricing-for-general-contractors/ (primary, 2026-09-22); getbuilt.com/products/lien-waiver-management-payments/ and /lien-waiver-management-create-account/ (primary, 2026-09-22).
+- **Decision: FAIL** (confirmed, unchanged) — no GC-side vendor checked has a confirmed self-serve paid checkout.
+
+#### Check 2 — Independent purchase
+- **Evidence:** GCPay's pricing model requires a "custom pricing" negotiation keyed to "annual subcontracted construction volume" and "number of projects & subcontractors" — a real negotiated-contract process, not self-checkout. Page tone reads as SMB-style lead generation rather than formal RFP/procurement, and GCPay's own case studies (vendor-published, not independent — noted as context only) name moderate-size GCs (e.g., a 75-employee firm), suggesting the negotiation isn't limited to enterprise-scale buyers. But a negotiated custom contract is still required before any GC, large or small, can pay anything — matching this check's own listed barrier category, "complex contracting."
+- **Sources:** ww3.gcpay.com/pricing-for-general-contractors/ and /demo/ (primary, 2026-09-22).
+- **Decision: FAIL** — even a moderate-size GC must complete a negotiated custom-pricing process before purchasing; this is a structural contracting barrier, not a decision the buyer can complete alone.
+
+#### Check 3 — Small/specialist vendor purchase precedent
+- **Evidence:** Unchanged from the original Discovery/Payment Gate pass — independent, named, dated Capterra reviews of GCPay from March 2026 (Carolinn T., Controller: "I resent being billed to collect our money," confirming real recurring billing; David C.; Mark J.; Staci B.), none vendor-published. (New GCPay case studies surfaced this pass are vendor-published and are noted only as supplementary, non-independent context, per the rule against treating vendor testimonials as independent evidence.)
+- **Sources:** capterra.com (GCPay reviews, previously verified, primary named reviewers).
 - **Decision: PASS**
 
-### Gate result
-**KILL**
+#### GC-side result
+**KILL** (Check 1 and Check 2 both FAIL)
 
-### Reason
-Check 1 fails (the category's central incumbents, GCPay and Siteline, are quote-only with no published price) and Check 2 independently fails (confirmed structural GC-mandate barrier: subcontractors — half of the identified buyer — do not independently choose or purchase the compliance platform; the GC does, and only through a sales-gated custom quote). Either failure alone triggers KILL per gate logic; both are independently confirmed here with primary vendor documentation. This is precisely the pattern described in this task's "Important distinction" section: real existing spending and a real paid incumbent, but a payment mechanism that requires procurement/custom contracting before any purchase occurs.
+---
+
+### B. Subcontractor-side buyer
+
+#### Check 1 — Visible self-serve pricing
+- **Evidence:** Siteline's own pricing page (siteline.com/pricing, re-fetched 2026-09-22) confirmed unchanged: "We offer custom pricing based on the specific needs of our customers... answer these few quick questions" — no self-serve tier. A newly identified, directly relevant vendor, **Payapps** (payapps.com/uk/pricing-subcontractors/), publishes genuine tiered recurring self-serve prices explicitly for "applications for payment" — Basic £32/mo (1 contract), Standard £85/mo (5), Premium £140/mo (10), Unlimited £270/mo, plus £35/pay-app pay-per-use — directly matching the stated problem. However, whether its "Sign up now" flow (uk.payapps.com/signup) actually collects payment immediately, versus routing to sales-assisted onboarding, could not be confirmed from page content. Levelset's self-serve pricing ($59/recipient for demand/notice letters) addresses an adjacent problem (payment-rights enforcement), not the stated pay-app/change-order/lien-waiver/COI tracking workflow; the parts of Levelset matching the actual problem (fuller lien-waiver management) are sales-gated, not self-serve.
+- **Sources:** siteline.com/pricing (primary, 2026-09-22); payapps.com/uk/pricing-subcontractors/ (primary, 2026-09-22); levelset.com/pricing/ and levelset.com/lien-notice/pricing/ (primary, 2026-09-22).
+- **Decision: UNKNOWN** — a materially relevant vendor (Payapps) with genuine self-serve list pricing was identified, but its actual checkout mechanism was not confirmed to complete a purchase without a sales conversation. Per this task's correction rule, this is insufficient evidence to resolve either PASS or FAIL, not a basis for KILL.
+
+#### Check 2 — Independent purchase
+- **Evidence:** No evidence of a procurement, certification, or committee-approval requirement was found for Payapps — its pricing/signup framing is standard tiered SMB SaaS, unlike GCPay/Siteline's explicit "custom pricing"/negotiated-quote language. No minimum contract term or seat count was found on the Payapps pricing page.
+- **Sources:** payapps.com/uk/pricing-subcontractors/ (primary, 2026-09-22).
+- **Decision: PASS**, with the caveat that this is tied to the same unconfirmed checkout mechanism flagged in Check 1 — recorded as a lean, not a fully independent confirmation.
+
+#### Check 3 — Small/specialist vendor purchase precedent
+- **Evidence:** Unchanged from the original pass — independent, named, dated Capterra reviews of Siteline from May 2025 (Jordan C., Owner/President: "transformed the way my company processed billings"; Veronica C.; Holly S.; McKenzie P., switched from Sage 100) confirm subcontractors do pay for sub-side specialist tools. This evidence is for **Siteline** specifically (the quote-only vendor) — no customer reviews were found for **Payapps** (the self-serve-priced vendor) this pass. The vendor with confirmed paid precedent and the vendor with confirmed self-serve pricing are, currently, not the same product.
+- **Sources:** capterra.com/p/252004/Siteline/ (primary, previously verified 2026-09-22).
+- **Decision: PASS** — for the general claim that subcontractors independently purchase specialist sub-side tools; this does not by itself confirm Payapps has any customers.
+
+#### Subcontractor-side result
+**BLOCKED / INCONCLUSIVE** — Check 1 is UNKNOWN (no check FAILs, so this is not a KILL, but Check 1 is not confirmed PASS either).
+
+---
+
+### Buyer-side summary
+
+| Buyer side    | Check 1 | Check 2 | Check 3 | Result |
+| ------------- | ------- | ------- | ------- | ------ |
+| GC            | FAIL    | FAIL    | PASS    | **KILL** |
+| Subcontractor | UNKNOWN | PASS (leaning, tied to Check 1 gap) | PASS | **BLOCKED / INCONCLUSIVE** |
+
+### Is the candidate too broad?
+**Yes.** The evidence shows GC-side and subcontractor-side are two structurally distinct payment mechanics, not one problem domain with one verdict. GC-side purchasing is confirmed negotiated-custom-contract, clearly gated (`KILL`). Subcontractor-side purchasing has at least one vendor (Siteline) with confirmed paying customers but no self-serve pricing, and at least one vendor (Payapps) with confirmed self-serve pricing but no confirmed customers or checkout mechanism — a genuinely open question, not a clean pass or fail. If this candidate is investigated further, GC-side and subcontractor-side should be tracked as separate lines of evidence rather than re-merged into one problem domain. This is a factual observation about the evidence gathered, not a proposal to create two new candidates — none are introduced by this task.
+
+### Gate result
+**Split — GC-side: KILL. Subcontractor-side: BLOCKED/INCONCLUSIVE.** No single candidate-level verdict is recorded, per the finding above that these are not one payment-plausibility profile.
 
 ### Remaining unknowns
-No first-person subcontractor complaint specifically describing being charged a GC-passed fee was found (the structural mechanism is vendor-documented, but a named sub's own account of experiencing it was not located this pass). Built Technologies' actual self-serve purchase mechanism for its one published price point ($1,000/mo) was not fully traced to a checkout flow.
+Whether Payapps' "Sign up now" flow actually completes a self-serve purchase (vs. routing to a sales-assisted process) — this is the single fact that would resolve the subcontractor-side Check 1 from UNKNOWN to PASS or FAIL. Whether Payapps has any named, current paying customers. Whether GCPay's quote-request process is functionally heavier than it reads (form fields could not be directly observed — JS-rendered). No first-person subcontractor complaint specifically describing being charged a GC-passed fee was found (the fee-passthrough mechanism is vendor-documented, but a named sub's own account of experiencing it was not located).
 
 ---
 
 ## Candidate 5 — eBay/Etsy Cross-Listing & Listing-Template Management
 
+### What changed from the previous pass
+Check 3 was previously `UNKNOWN` because the only named-user evidence found (an eBay Community forum thread) confirmed active use but not paid status, since LitCommerce and FolderLister both offer a trial/free tier. This pass searched specifically for explicit, named, dated paid-status confirmation and found it for LitCommerce: two independent, named/identifiable Trustpilot reviewers, dated within the 2025–2026 window, explicitly describe paying for or being charged by LitCommerce. This resolves Check 3 to `PASS` and reverses the candidate-level result from `BLOCKED/INCONCLUSIVE` to `PASS`.
+
 ### Buyer
-Long-tenured eBay/Etsy power sellers and small multichannel resellers who pay monthly for a listing-management/template subscription, displaced by InkFrog's April–June 2026 shutdown.
+(unchanged) Long-tenured eBay/Etsy power sellers and small multichannel resellers who pay monthly for a listing-management/template subscription, displaced by InkFrog's April–June 2026 shutdown.
 
 ### Existing paid solution
-LitCommerce (litcommerce.com), Sixbit (sixbitsoftware.com), FolderLister (folderlister.com) — the three named InkFrog-alternative destinations from `DISCOVERY.md`'s eBay Community forum evidence.
+(unchanged) LitCommerce (litcommerce.com), Sixbit (sixbitsoftware.com), FolderLister (folderlister.com).
 
 ### Check 1 — Visible self-serve pricing
-- **Evidence:** LitCommerce's own pricing page publishes an interactive slider ("From $29/mo" for 3 channels/1,000 listings), with a direct "START FREE TRIAL" button linking to a real registration flow, 7-day trial, accepting card/PayPal/Shopify/Wix Payment, no setup costs. Sixbit's own pricing page publishes five exact named tiers ($29.99–$184.99/mo), each with a "TRY FREE" button linking directly to a checkout cart (`clients/cart.php?a=add&bid=...`), 30-day free trial, explicit "no contractual obligations." FolderLister's homepage publishes three tiers including a genuine $0 free tier ("No payment details required") plus Pro $25/mo and Extreme $45/mo, each with a "Subscribe" button linking straight to Stripe checkout, license key delivered by email after payment.
-- **Sources:** litcommerce.com/pricing/ (primary, page `og:updated_time` 2026-09-09, accessed 2026-09-22); sixbitsoftware.com/pricing/ (primary, page `modifiedTime` 2024-08-06, accessed 2026-09-22); folderlister.com/ (primary, accessed 2026-09-22).
-- **Decision: PASS** — all three named alternatives have genuine, working self-serve checkout with no sales-call gate at any tier.
+(Unchanged from the previous pass — not re-researched this pass, no contradicting evidence encountered.) **PASS** — all three named alternatives have genuine, working self-serve checkout with no sales-call gate at any tier (LitCommerce: "START FREE TRIAL" → real registration, 7-day trial; Sixbit: "TRY FREE" → direct checkout cart, 30-day trial; FolderLister: "Subscribe" → Stripe checkout, plus a genuine $0 tier).
 
 ### Check 2 — Independent purchase
-- **Evidence:** All three allow an individual seller to sign up and pay online today with no procurement step. LitCommerce's monthly plan cancels "at any time"; its only contract wrinkle is an optional discounted annual plan that "commit[s] you to a full year of service" — avoidable by staying on monthly billing. Sixbit explicitly states "no contractual obligations," no setup fee. FolderLister's free tier requires no payment info at all, and its paid tiers go straight through Stripe with no stated minimum term or onboarding call.
-- **Sources:** litcommerce.com/pricing/ FAQ (primary); sixbitsoftware.com/pricing/ FAQ (primary); folderlister.com/ (primary) — all accessed 2026-09-22.
-- **Decision: PASS**
+(Unchanged from the previous pass — not re-researched this pass, no contradicting evidence encountered.) **PASS** — no procurement, minimum-term (beyond an avoidable optional annual discount at LitCommerce), or certification barrier found for any of the three.
 
 ### Check 3 — Small/specialist vendor purchase precedent
-- **Evidence:** The eBay Community forum thread (community.ebay.com, replies dated ~May 2026, during the InkFrog shutdown window) shows named posters describing active use — andy.johns_4: "Try LitCommerce, i found it on the Shopify app store... been pretty smooth for syncing so far"; lit1213: "Personally I use folderlister... Re-use profiles with pre set item specifics." Critically, **neither post confirms paid status**: LitCommerce offers a 7-day trial and FolderLister has a permanent free tier, so both named users could plausibly be on a free/trial tier rather than paying. A FolderLister vendor-published testimonial names a real, checkable eBay storefront (Sven Masch / ebay.com/usr/fotohistorie) but is vendor marketing content, not independent evidence. An independent Trustpilot review (litcommerce.com, dated Sept 20 2026) describes a detailed, dated migration from Codisto Linq/Marketplace Connect and being "fully operational" within a week, but the reviewer is anonymous and the tier (free/paid) is not stated. Sixbit's most recent named Capterra review is from Sept 16 2024 (Rob N.) — no current (2025–2026) named customer evidence was found for Sixbit specifically.
-- **Sources:** community.ebay.com/t5/Seller-Tools/Inkfrog-alternatives/td-p/33386424 (secondary forum, named posters, replies ~2026-05); trustpilot.com/review/litcommerce.com (independent, 2026-09-20); capterra.com/p/178178/SixBit-Software/reviews/ (primary, 2026-09-22); g2.com/sellers/folderlister (independent, "Verified Current User," date/tier not stated).
-- **Decision: UNKNOWN** — real, dated, named activity around these tools exists, but no evidence gathered this pass unambiguously confirms *paid* (as opposed to free-tier or trial) usage by an identified individual, and Sixbit's own customer trail is stale (>12 months).
+- **Evidence:** **LitCommerce** — two named, identifiable Trustpilot reviewers explicitly confirm paid status, both dated within the 2025–2026 window: **Lingo Lohr** (★3, Feb 17 2026): "I paid for their annual plan based on the reviews but requested refund within 30 days... because they want you to stick to them to continue to pay annual fee!" — explicit first-person paid statement. **Shizonic** (★1, Nov 17 2025): "A payment was charged from my bank for LitCommerce, and I provided full evidence: screenshots from Shopify, my bank statement, transaction details..." — explicit charge confirmation. Both are negative/complaint reviews, which if anything increases credibility (no incentive to fabricate paid status), and both are primary Trustpilot reviews from named/identifiable accounts, re-confirmed against LitCommerce's still-active 7-day trial (meaning sustained, charged use past that window is not explainable by a free tier).
+  **FolderLister** — remains unconfirmed: its free tier was directly verified as permanent/non-expiring ("The free tier is permanent, not a trial... no expiry date and no card required," per FolderLister's own pricing FAQ), which undercuts any tenure-based inference. Only one review was found (an anonymous G2 "Verified User in Retail," 4/18/2026, no plan tier or volume stated), and FolderLister has no Trustpilot or Capterra review presence at all (both directly checked, neither exists).
+  **Sixbit** — unambiguous paid confirmation exists but outside the preferred freshness window: Laura S. (★5, June 26 2024): "The monthly price is extremely reasonable"; Trish R. (★5, Aug 8 2024): "Prices are going up a bit in Sept. 2024." Capterra's full Sixbit review set is confirmed exhaustive (16 of 16 shown) with nothing newer than Dec 2024 — no 2025–2026 named Sixbit customer evidence exists to find.
+- **Sources:** trustpilot.com/reviews/6993eb9273a6149a58d43524 (Lingo Lohr, primary, named, 2026-02-17); trustpilot.com/reviews/691bb435f5d6fe6d1fd05130 (Shizonic, primary, named, 2025-11-17); folderlister.com/ pricing FAQ (primary, 2026-09-22); g2.com/products/folderlister/reviews (primary, 2026-09-22); capterra.com/p/178178/SixBit-Software/reviews/ (primary, named, 2024 dates, confirmed exhaustive).
+- **Decision: PASS** — LitCommerce alone provides sufficient, current (2025–2026), named, primary-source, explicitly-paid customer precedent for this buyer type purchasing from a small/specialist vendor. This does not extend to FolderLister (still genuinely unconfirmed) or close Sixbit's recency gap, but the check only requires evidence that this buyer type purchases from *a* relevant small/specialist vendor, which LitCommerce now satisfies unambiguously.
 
 ### Gate result
-**BLOCKED / INCONCLUSIVE**
+**PASS** (corrected from `BLOCKED/INCONCLUSIVE`)
 
 ### Reason
-Checks 1 and 2 both pass cleanly — self-serve pricing and independent purchase are well-confirmed for all three named alternatives. Check 3's evidence is real but does not clear the bar for confirmed *paid* precedent (the two most relevant named forum users could plausibly be on free/trial tiers). Per gate logic, "Check 3 = UNKNOWN → BLOCKED/INCONCLUSIVE. Do not manufacture a PASS."
+The previous `BLOCKED/INCONCLUSIVE` result was the correct call given the evidence available at the time (confirmed activity, unconfirmed payment). This pass found explicit, named, dated, primary-source confirmation of paid status for LitCommerce specifically — two independent complaint reviews that incidentally document real charges — which is sufficient to resolve Check 3 without inventing evidence.
 
 ### Remaining unknowns
-Whether andy.johns_4 (LitCommerce), lit1213 (FolderLister), or the G2/Trustpilot reviewers are actually on a paid tier, versus free/trial. Whether any current (2025–2026) named Sixbit customer exists at all — the only trail found is from 2024.
+FolderLister's and Sixbit's current (2025–2026) paid-customer status remain unconfirmed — FolderLister: genuinely open, its permanent free tier makes tenure a weak signal on its own; Sixbit: paid status is well-confirmed historically but not within the preferred freshness window. Neither affects this candidate's `PASS` result, since Check 3 only requires one relevant vendor's precedent, but both remain open questions if this candidate is investigated further at the next gate.
 
 ---
 
@@ -184,9 +230,10 @@ Whether andy.johns_4 (LitCommerce), lit1213 (FolderLister), or the G2/Trustpilot
 
 *Methodological observations only — no ranking of candidates.*
 
-- **"Contact sales despite a published, non-negotiable price" is a distinct failure mode from pure quote-only pricing**, and both were encountered in this pass (Candidate 2 = published-but-demo-gated; Candidate 4's GCPay/Siteline = no price published at all). Both correctly fail Check 1 under the task's own instruction not to treat "contact us" as self-serve, but future gate applications should keep recording which sub-pattern applies, since the two failure modes carry different implications (a published price at least signals the vendor doesn't negotiate case-by-case, even if the checkout mechanism itself isn't self-serve).
-- **Review-tenure claims ("used it for 3 years," "using the app for over 1 year") on Capterra/Shopify App Store are a useful but imperfect proxy for confirmed paid status.** They strongly suggest sustained real usage but do not, on their own, rule out an extended free/trial tier, especially for products (like two of the three checked in Candidate 5) that offer a permanent free tier or an unusually long trial. This gap directly produced the Candidate 5 UNKNOWN result and should be treated as a recurring limitation of Capterra/App-Store review evidence generally, not specific to that candidate.
-- **A dual-sided buyer definition (Candidate 4's "GCs and subcontractors") can contain two structurally different Payment Plausibility profiles at once** — one side (GC) that purchases via custom quote, one side (subcontractor) that is often mandated onto the GC's chosen platform but can independently buy a *different*, complementary tool (Siteline) to cope with that mandate. Averaging or picking one side without stating which was evaluated would have obscured this finding; recording both explicitly was necessary to reach a defensible Check 2 verdict.
+- **"Contact sales despite a published, non-negotiable price" is a distinct failure mode from pure quote-only pricing**, and both were encountered in this pass (Candidate 2's dominant incumbents TaxDome/Canopy/SmartVault = published-but-demo-gated; Candidate 4's GCPay/Siteline = no price published at all). Both correctly fail Check 1 *for those specific vendors* under the task's own instruction not to treat "contact us" as self-serve, but future gate applications should keep recording which sub-pattern applies, since the two failure modes carry different implications (a published price at least signals the vendor doesn't negotiate case-by-case, even if the checkout mechanism itself isn't self-serve).
+- **Review-tenure claims ("used it for 3 years," "using the app for over 1 year") on Capterra/Shopify App Store are a useful but imperfect proxy for confirmed paid status.** They strongly suggest sustained real usage but do not, on their own, rule out an extended free/trial tier, especially for products that offer a permanent free tier or an unusually long trial (as encountered with FolderLister in Candidate 5). Explicit first-person statements of payment or being charged (as eventually found for LitCommerce) are categorically stronger than tenure inference and should be actively searched for before defaulting to UNKNOWN.
+- **A dual-sided buyer definition (Candidate 4's "GCs and subcontractors") can contain two structurally different Payment Plausibility profiles at once** — one side (GC) that purchases via custom quote, one side (subcontractor) that is often mandated onto the GC's chosen platform but can independently buy a *different*, complementary tool to cope with that mandate. Blending the two into one verdict (as the initial pass did) produces a misleading result; recording both sides explicitly, as a corrected pass, was necessary to reach a defensible verdict at all.
+- **(Task 05A correction) Check 1 must be evaluated at the category/relevant-vendor level, not at the level of whichever vendor happens to be the largest or most frequently cited incumbent.** The initial pass's Candidate 2 `KILL` was driven entirely by checking the three most prominent incumbents and stopping there; a smaller, already-identified specialist vendor (Financial Cents) turned out to have a genuine self-serve path the first pass never checked. This is a general methodological risk — discovery evidence naturally surfaces the loudest/largest incumbents first, and Check 1 must not be resolved on their evidence alone before at least one smaller, already-named alternative has been directly checked.
 
 ---
 
@@ -196,9 +243,28 @@ None found. The three-check structure specified in this task is consistent with,
 
 ---
 
+## Corrected Gate Summary
+
+| Candidate | Check 1 | Check 2 | Check 3 | Final |
+| --- | --- | --- | --- | --- |
+| Insurance Commission Reconciliation *(not re-opened, unchanged)* | PASS | PASS | PASS | PASS |
+| Multichannel E-Commerce Accounting Reconciliation *(not re-opened, unchanged)* | PASS | PASS | PASS | PASS |
+| Tax Practice Client Portal | PASS *(corrected)* | PASS | PASS | **PASS** *(corrected from KILL)* |
+| Construction Pay-App / Lien Waiver — GC side | FAIL | FAIL | PASS | **KILL** |
+| Construction Pay-App / Lien Waiver — Subcontractor side | UNKNOWN | PASS | PASS | **BLOCKED/INCONCLUSIVE** |
+| eBay/Etsy Cross-Listing | PASS | PASS | PASS *(corrected)* | **PASS** *(corrected from BLOCKED/INCONCLUSIVE)* |
+
+No ranking is implied by table order. Construction Pay-App / Lien Waiver has no single Final value because the evidence shows it is not one payment-plausibility profile — see "Is the candidate too broad?" above.
+
+---
+
 ## Next Research
 
-- **Insurance Commission Reconciliation (PASS):** next gate per `BASELINE.md` ordering is Switching Feasibility & Switching Destination (§8) — `DISCOVERY.md` already recorded actual-switching signal (Excel → Commission Tracker; AgencyBloc AMS+ → Commission Tracker) that now needs to be checked against lock-in, procurement/contractual constraints, and realistic-alternative-availability per §8, not simply carried forward as-is.
-- **Multichannel E-Commerce Accounting Reconciliation (PASS):** same next step — Switching Feasibility & Switching Destination (§8), using the A2X → Link My Books / Dext Commerce → Link My Books switching evidence already on record in `DISCOVERY.md`.
-- **eBay/Etsy Cross-Listing & Listing-Template Management (BLOCKED/INCONCLUSIVE):** per §6's own rule, this does not advance to the next gate yet. The specific open question to resolve first is Check 3 itself — Source Class B evidence (§10) that directly confirms *paid* (not free/trial) status for named current users of LitCommerce, FolderLister, or Sixbit, and any current (2025–2026) named Sixbit customer at all.
-- **Tax Practice Client Portal and Construction Subcontractor Pay-Application (KILL):** no further research proposed under this task's scope. Per `DECISION.md`'s global rule, a KILL is not reopened without materially new evidence — for Candidate 2, that would mean direct confirmation of a genuinely self-serve (non-demo-gated) purchase path at a relevant vendor (e.g., Financial Cents, unverified this pass); for Candidate 4, it would mean evidence that the GC-mandate structural pattern found here is not, in fact, dominant for this problem domain.
+*Only the next gate to investigate is named below — it is not performed in this task.*
+
+- **Insurance Commission Reconciliation (PASS, unchanged):** next gate per `BASELINE.md` ordering is Switching Feasibility & Switching Destination (§8).
+- **Multichannel E-Commerce Accounting Reconciliation (PASS, unchanged):** same next step — Switching Feasibility & Switching Destination (§8).
+- **Tax Practice Client Portal (PASS, corrected):** now eligible for Switching Feasibility & Switching Destination (§8) — `DISCOVERY.md` already recorded ≥7 named, dated switching accounts between TaxDome and competing products that now need to be checked against lock-in, contractual constraints, and realistic-alternative-availability per §8, specifically re-examined in light of Financial Cents as a documented, genuinely self-serve destination.
+- **eBay/Etsy Cross-Listing (PASS, corrected):** now eligible for Switching Feasibility & Switching Destination (§8) — the InkFrog-shutdown switching evidence already on record in `DISCOVERY.md` needs the same §8 treatment.
+- **Construction Pay-App / Lien Waiver — GC side (KILL):** no further research proposed. Per `DECISION.md`'s global rule, not reopened without materially new evidence — specifically, evidence that a GC-side vendor offers a genuinely self-serve, non-custom-quoted purchase path.
+- **Construction Pay-App / Lien Waiver — Subcontractor side (BLOCKED/INCONCLUSIVE):** does not advance to the next gate yet. The specific open question to resolve first is Check 1 — whether Payapps' (or another relevant sub-side vendor's) signup flow completes a genuine self-serve purchase, and whether Payapps has any named, current paying customers.
