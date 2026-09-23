@@ -218,6 +218,108 @@ Only what remains material after this research:
 
 ---
 
+## 22. Distribution Recovery Gate
+
+*Task 11. This is the final bounded distribution-recovery attempt for this candidate, run because §21 found `NOT READY`: the only channel with confirmed Distribution-gate `PASS` evidence (eBay Community peer recommendation) is not one the founder can originate without either violating eBay's own Community Content Policy or violating this project's anti-bias rules. This section does not reopen Discovery, redesign the product, or propose cold outreach/paid ads/rule violations. It supersedes §8 and §12 where they conflict with the finding below.*
+
+### 22.1 Objective
+
+Determine whether at least one current, organic, founder-executable distribution path exists through which a genuinely small/new eBay/Etsy cross-listing service can obtain its first paying seller — without cold outreach, astroturfing, paid advertising, or violating any platform's rules. Channel A (a founder legitimately creating a discoverable presence) is sufficient to reopen Validation; Channel B (an actual sale) is not required here.
+
+### 22.2 Channels examined
+
+Bounded to channels with a credible reason to expect the six criteria could be satisfied, per the task's instruction not to investigate every listed family automatically:
+
+1. **Freelance/specialist service marketplaces (Fiverr)** — investigated in depth; see §22.3.
+2. **Freelance/specialist service marketplaces (Upwork)** — investigated comparatively, for contrast with Fiverr's discovery model.
+3. **Reddit seller communities (r/Flipping, r/Ebay)** — investigated for self-promotion rules.
+4. **Facebook groups for eBay/Etsy sellers** — investigated for self-promotion rules.
+5. **eBay Community peer forums, eBay Certified Provider directory, Shopify App Store, Etsy forums** — already resolved in `DISTRIBUTION_GATE.md` and `VALIDATION_GATE.md` §21.1–§21.2; not re-litigated per the task's constraint against reopening closed gates. eBay's Classified-Ad/services-listing route remains the `INCONCLUSIVE`, not-further-pursued finding from §21.2 — superseded in relevance once a `PASS` channel was found below, per the stop condition.
+
+### 22.3 Evidence by channel
+
+#### Channel: Fiverr (gig marketplace, category/tag browsing and search)
+
+- **Target buyer presence — confirmed, primary (platform-verified transaction data, not vendor claim).** The `fiverr.com/gigs/crosslisting` tag page (primary, accessed 2026-09-23) lists **220 active services** under this exact search term. Individual gig pages carry Fiverr's own platform-verified buyer reviews (tied to completed, paid orders, not self-reported): e.g. seller `wedevs16`'s cross-listing gig (poshmark/ebay/etsy/mercari/shopify/offerup) has two reviews from named US buyers — `styledunder25` ("This was my first time hiring someone to list my items, and you did a great job!!," $50–$100, 5-day job) and `chrislee626` ("Very good," $50) — both consistent with the exact wedge buyer (a reseller paying once for a defined batch of manual cross-listing, not a subscription tool).
+- **Newcomer access — confirmed, primary.** Creating a Fiverr seller account and publishing a gig requires no approval, no customer references, and no minimum seller history (help.fiverr.com/hc/en-us/articles/23429542870161, primary, accessed 2026-09-23: "New Seller" is the automatic starting tier). Unlike the eBay Certified Provider directory or Shopify App Store, there is no gate before a first listing can go live.
+- **Founder-executable discovery — confirmed, concrete, not inferred.** Directly observed on the live `crosslisting` tag page (accessed 2026-09-23): seller `kinggeo234` ("Aaqas Malik," Pakistan) appears at position 16 of 220 with **2 completed orders, no seller-level badge (New Seller tier)**, unpromoted (no "Ad" tag) — placed among established Level 1/Level 2/Top Rated sellers on the same page a buyer actually browses. His gig page (fetched directly, accessed 2026-09-23) shows a real named US buyer, `onlineluis`, leaving two verified reviews across an "ongoing collaboration" for Mercari/eBay-adjacent store-listing work — a genuinely small, unknown vendor, independently discovered and paid, with no prior relationship to the buyer. This is the concrete "small/new vendor being discoverable" instance the evidence standard requires — not "a listing exists" or "SEO is possible."
+- **Organic — confirmed.** Fiverr's own ranking documentation (primary, same source) lists relevancy, historical appeal, client satisfaction, and review scores as ranking factors, and separately identifies **Fiverr Ads promoted listings as a distinct, badge-marked category** — meaning the unpromoted (non-"Ad") gigs observed above, including the 2-order New Seller gig, are organic placements, not paid ones. No cold outreach occurs in this mechanism: the buyer initiates contact by browsing or searching and messaging/ordering; the founder does not contact anyone.
+- **Commercially relevant — confirmed.** Existing gigs on this exact tag are priced in tiered one-time packages ($5–$100+ for defined batches of items across a stated number of days) — structurally identical to the wedge in §5 (a defined, one-time, hand-delivered batch outcome, not a subscription).
+- **Current — confirmed.** All evidence above was fetched live on 2026-09-23, not archived or dated evidence.
+- **Observable discovery mechanism — confirmed.** The mechanism is: a buyer navigates to Fiverr's search bar or a tag/category page (e.g., `/gigs/crosslisting`, `/gigs/ebay-listing`, `/gigs/etsy-listing`), which lists all currently active, available gigs matching the term (not filtered to only established sellers), reviews the gig description and price, and messages or orders directly through Fiverr's own checkout — no external contact, no forum post, no third party required.
+- **Source/date:** fiverr.com/gigs/crosslisting (primary, accessed 2026-09-23); fiverr.com/kinggeo234/... and fiverr.com/wedevs16/... gig pages (primary, accessed 2026-09-23); help.fiverr.com/hc/en-us/articles/23429542870161 (primary, accessed 2026-09-23).
+- **Evidence strength: Path A and Path B both satisfied.** A dated, current, concrete, independently-corroborated (platform-verified transaction) case of a genuinely small/new vendor being discovered and paid through this exact mechanism, for this exact wedge, with no founder self-promotion violation of any rule (Fiverr's own terms of service are the only applicable rules, and creating and selling a gig is the platform's intended, sanctioned use, not an edge case).
+
+#### Channel: Upwork (job-bid marketplace) — examined for contrast, not relied upon
+
+- Buyer presence: plausible (multichannel-reseller-adjacent job postings exist) but not independently confirmed for this specific wedge in this pass.
+- Newcomer access: **structurally weaker than Fiverr for this purpose.** Upwork's own ranking factors (secondary sources citing Upwork's stated matching criteria, accessed 2026-09-23) weight Job Success Score and work history, and freelancers describe a "cold start problem" for new accounts with no track record. Unlike Fiverr's tag/category pages (which list all active gigs to any browsing buyer), Upwork's primary discovery unit is the client's own job posting, competitively bid on by proposals — closer in structure to the review/install-weighted app-store pattern already found insufficient for other candidates.
+- **Evidence strength: not used as the qualifying channel** — kept only as a documented comparison showing why Fiverr, not the freelance-marketplace family in general, is the specific mechanism that qualifies.
+
+#### Channel: Reddit (r/Flipping, r/Ebay)
+
+- Buyer presence: plausible (both are seller-focused).
+- Founder-executable discovery: **weak/unconfirmed.** Secondary sources (accessed 2026-09-23) describe r/Flipping as strictly limiting self-promotion to rare, genuinely-helpful mentions in response to a real question — structurally similar to the already-`BLOCKED` eBay Community mechanism (reactive-only, no vendor-initiated posting), not independently verified against Reddit's or the subreddit's own primary rules text in this pass.
+- **Evidence strength: not relied upon** — same structural defect already found decisive for eBay Community in §21.1 (peer-only, not founder-executable), and not verified to primary-source rigor here since a qualifying channel (Fiverr) was already found.
+
+#### Channel: Facebook groups for eBay/Etsy sellers
+
+- Buyer presence: plausible.
+- Founder-executable discovery: **rules vary by group and are not centrally documented** — secondary sources (accessed 2026-09-23) describe some groups permitting business self-promotion in designated threads/days under a stated ratio (e.g. "70/30"), but this is per-group, not a platform-wide, verifiable rule, and no specific current group's pinned rules were checked against a primary source in this pass.
+- **Evidence strength: not relied upon** — insufficiently verified to the standard applied elsewhere in this project (would require naming and checking a specific group's current pinned rules, which was not necessary once Fiverr qualified).
+
+### 22.4 Qualifying channel
+
+**Fiverr — organic gig placement in the cross-listing / eBay-listing / Etsy-listing categories, discovered via buyer search and category browsing.**
+
+### 22.5 Why it satisfies all six criteria
+
+1. **Buyer presence:** platform-verified reviews on existing gigs are from named buyers paying for exactly this wedge (one-time, manual, batch cross-listing/listing work), not the vendor's own unverified claim.
+2. **Newcomer access:** no approval, no reference requirement, no minimum history to publish a gig (help.fiverr.com, primary).
+3. **Founder-executable discovery:** the founder creates the gig and is discoverable the moment it is published and indexed on category/tag pages — no dependency on an existing customer, peer, or friend to name them.
+4. **Organic:** the observed small/new-vendor gig (`kinggeo234`, 2 orders) carries no "Ad" tag; ranking factors are relevance/history/satisfaction, not pay-to-play, per Fiverr's own documentation.
+5. **Commercially relevant:** existing gigs in this exact category already sell the same kind of one-time, defined-batch outcome as the wedge in §5, at comparable price points.
+6. **Current:** all evidence fetched live on 2026-09-23.
+
+### 22.6 Why it does not require cold outreach
+
+The founder never initiates contact with a buyer. The founder's only action is to create and publish a gig (a passive, standing offer). Discovery and first contact are buyer-initiated: a buyer searches or browses Fiverr's own category pages and messages or orders the gig. This is structurally different from the `BLOCKED` eBay Community mechanism in §21.1, which required the founder to insert a commercial disclosure into someone else's thread — here, no such insertion occurs; the founder's page exists on a marketplace built for exactly this kind of standing service listing.
+
+### 22.7 Why a small/new vendor can participate
+
+Confirmed directly, not inferred: a New Seller-tier gig with 2 completed orders and no promotion (`kinggeo234`) appears on the live, buyer-facing category page for this exact service category, at a position (16 of 220) within what a browsing buyer would plausibly see, alongside established sellers — the opposite of the eBay Certified Provider directory (structurally closed pre-discovery) and consistent with the fact that "gigs" are individually created listings, not a competitive slot a small vendor must first earn admission to.
+
+### 22.8 Discovery mechanism
+
+A buyer searches Fiverr (e.g., "ebay etsy cross listing," "cross listing service") or browses a tag/category page such as `fiverr.com/gigs/crosslisting`, `fiverr.com/gigs/ebay-listing`, or `fiverr.com/gigs/etsy-listing`; the page lists all currently active gigs matching the term, ranked by relevance/quality signals but not gated to only established sellers; the buyer opens a gig page, reads the offer and price packages, and messages or orders directly through Fiverr's own contact/checkout flow.
+
+### 22.9 Current evidence
+
+All primary evidence in §22.3 was fetched directly from fiverr.com and help.fiverr.com on 2026-09-23 — live category-page listings, live gig pages with review counts and dates, and Fiverr's own current help-center documentation of its ranking system. None of it is inferred, archived, or vendor-self-reported.
+
+### 22.10 Final status
+
+**Distribution Recovery Gate: PASS**
+
+Qualifying channel: **Fiverr**, via organic gig placement in the cross-listing/eBay-listing/Etsy-listing categories. Acquisition mechanism: the founder publishes a gig describing the exact wedge (§5/§9); buyers who are already searching Fiverr for exactly this service discover and order it without the founder contacting anyone.
+
+### 22.11 Exact modification required to the Validation experiment
+
+Only the distribution and buyer-action sections change; the wedge, offer, fulfillment method, price band, and success/failure thresholds in §5, §9, §10, §11, §13, §14, §16 are not implicated by this finding and do not need to change:
+
+1. **§8 (Distribution mechanism) is replaced.** The mechanism is no longer eBay Community participation. It is: the founder publishes a Fiverr gig describing the exact wedge (a one-time, hand-delivered batch cross-listing eBay→Etsy plus a portable item-specifics/template spreadsheet), placed in the eBay listing / Etsy listing / cross-listing gig categories, using organic placement only (no Fiverr Ads/promoted-listing spend, to preserve the "organic" requirement). Fiverr's platform fee (a standard marketplace commission, not paid advertising) applies and should be priced into §10 rather than treated as a distribution cost.
+2. **The gig description itself must state plainly that no account credentials are requested**, consistent with §11's existing no-credentials fulfillment design (Etsy Shared Shop Access collaborator invite or seller-run CSV import; eBay's own read-only export) — this differs from several competing Fiverr gigs observed in §22.3 (e.g. `wedevs16`, which explicitly asks for "websites Login Information") and should be framed as a trust-building differentiator, not a limitation.
+3. **§12 (Buyer action) is replaced.** New funnel: seller searches/browses Fiverr → finds the gig → messages or orders directly through Fiverr's own order flow (Fiverr's built-in payment/escrow replaces the generic external Stripe/PayPal link previously proposed in §7) → seller shares listing data per §11 → seller receives the delivered spreadsheet + live Etsy batch within the timebox.
+4. **§13/§14's "found solely through the eBay Community channel" language is replaced with "found solely through the Fiverr gig, with no prior relationship to the founder."** The numeric thresholds (3 payments to PASS, 15 qualified opportunities before FAIL) are not changed by this recovery gate — they were not the blocker — but should be re-examined against Fiverr's own cadence (message/order-request volume) rather than the eBay Community's slower thread-reply cadence in any subsequent design pass, which is out of scope here.
+5. **§17 (Operational risks) gains one item, replacing the forum-policy risk that drove `NOT READY`:** Fiverr's marketplace fee reduces net proceeds per sale (should be reflected in the price test's economics); and unlike a forum reply, a live Fiverr gig is a standing public offer, so its visibility is continuous rather than tied to a single reactive reply — a different, and materially lower, compliance-risk profile than §21.1's forum-disclosure mechanism, since gig publishing is Fiverr's intended, sanctioned use of the platform rather than a boundary case of someone else's community rules.
+
+### 22.12 Open assumptions carried forward
+
+- **`INCONCLUSIVE`, not resolved here:** the actual conversion rate and volume Fiverr's cross-listing gig categories would produce specifically for the eBay→Etsy (not Poshmark/Mercari-dominant) sub-segment of this wedge — the observed buyer reviews (`styledunder25`, `chrislee626`, `onlineluis`) are multi-platform resale listing jobs, not confirmed eBay-to-Etsy-specific in every case. This is a volume/fit question for the experiment itself to answer, not a distribution-mechanism blocker — Path A (mechanism exists) is what this gate required, and it is met.
+- **`INCONCLUSIVE`, not resolved here:** whether Fiverr's own terms of service treat "account-adjacent" services (even credential-free ones, using Etsy's collaborator-invite feature) as within its permitted service categories without restriction — not specifically checked against Fiverr's prohibited-services list in this pass; the observed live gigs performing materially similar work is treated as adequate evidence the category itself is permitted, but the specific credential-free framing proposed in §22.11.2 was not separately verified against Fiverr's own policy text.
+
+---
+
 ## Summary
 
 1. **The exact validation experiment:** genuine, disclosed, reactive participation in the eBay Community Seller Tools forum, offering a one-time, hand-delivered batch cross-listing (eBay → Etsy) plus a portable item-specifics/template spreadsheet, for $19–$39, paid upfront before any manual work begins.
