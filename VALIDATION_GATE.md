@@ -139,6 +139,85 @@ Marked explicitly rather than filled with invented evidence, per this task's ins
 
 ---
 
+## 21. Validation Readiness
+
+*Task 10. This section does not reopen Discovery, Payment, Switching, or Distribution — it evaluates whether the experiment designed in §§1–20 is actually executable as written. It supersedes §8 and §11 where they conflict with the findings below; §§1–20 are left unedited as the original proposal, for the record.*
+
+### 21.1 Distribution compliance
+
+**BLOCKED**
+
+eBay's own current policy pages (all primary, accessed 2026-09-23) were checked directly, not inferred:
+
+- **Community Content Policy** (ebay.com/help/policies/member-behavior-policies/community-content-policy?id=4265): prohibits "promoting or advertising to buy, sell, or trade any product or service listed or located outside of any eBay property"; "linking from content published on eBay to any third-party website, including those that include offers to trade, sell, or purchase goods or services off eBay is generally not permitted"; "including any advertising credit, including links, logos, or company names within published content"; and "offering discounts, free items, or any other form of compensation, benefit, or incentive in exchange for positive feedback." **The policy contains no exception for recommending a tool one uses, and does not distinguish promoting one's own product from recommending someone else's** — this is a direct textual finding, not an inference.
+- **Profile Policy** (ebay.com/help/policies/identity-policies/profile-policy?id=4234): external links outside eBay are not permitted in member profiles.
+- **Member-to-Member Contact Policy** (ebay.com/help/policies/member-behaviour-policies/membertomember-contact-policy?id=4262): members may not share or request contact information prior to completing a transaction on eBay.
+- **Offering to Buy or Sell Outside of eBay Policy** (ebay.com/help/policies/payment-policies/offers-buy-sell-outside-ebay-policy?id=4272): members "cannot engage in any action designed to complete or facilitate a transaction outside of eBay."
+
+Applying this to the seven behaviors named in this task:
+
+| # | Behavior | Status | Basis |
+|---|---|---|---|
+| 1 | Peer recommends a vendor (third party, no commercial stake) | **Tolerated in practice, not formally exempted** | The confirmed FLYP thread (`DISTRIBUTION_GATE.md`) remains live/unremoved; but the policy text does not carve this out — it is an observed enforcement pattern, not a documented right. **This is evidence about what a third party can do, not what the founder can do.** |
+| 2 | Vendor participates as a normal user, discloses nothing commercial | Permitted | No policy conflict, but generates no conversions — not an acquisition mechanism. |
+| 3 | Vendor discloses they sell a service | **Prohibited** | Direct match to "promoting or advertising... a product or service... located outside of eBay." |
+| 4 | Vendor links to their own commercial service | **Prohibited** | Direct match to the linking/advertising-credit rules above. |
+| 5 | Vendor responds to a buyer's question with a commercial offer | **Prohibited** | The policy bans the promotional content itself; it does not exempt promotion that was solicited by a question. Reactive framing, as proposed in the current §8, is not a stated exception. |
+| 6 | Vendor profile discoverability (bio/link) | **Prohibited** | Direct match to the Profile Policy. |
+| 7 | Private/contact mechanisms | **Prohibited** | Member-to-Member Contact Policy bars pre-transaction contact-info exchange; the Off-eBay policy separately bars facilitating any transaction off eBay. |
+
+**Conclusion:** the specific mechanism proposed in the current §8 — the founder, in direct reply to a seller's question, disclosing they sell a paid service and asking if the seller wants to try it — is behavior #5, which is directly and unambiguously prohibited by the Community Content Policy's own text. The confirmed Distribution-gate `PASS` evidence (the FLYP case) is behavior #1, a different, non-transferable behavior: it shows what happens when an *independent third party* recommends an *already-existing* product with real prior usage, not what happens when a *founder* discloses *their own new offer*. Per this task's instruction not to interpret ambiguous language optimistically, and given the language here is not ambiguous, this is marked `BLOCKED`, not `INCONCLUSIVE`.
+
+### 21.2 Compliant acquisition mechanism
+
+**BLOCKED**
+
+Evaluated against the required criteria (buyer presence, small/new-vendor access, actual discovery mechanism, no established-customer-base requirement, no cold outreach, current rules, concrete evidence):
+
+- **Peer recommendation** (the only channel with positive Distribution-gate evidence): cannot be the founder's mechanism. The founder originating it would require asking someone to recommend the service (astroturfing) or waiting for organic, independent recommendation to arise on its own — which requires the product to already have real independent users, i.e. it cannot bootstrap the *first* payment. This is a structural, not incidental, mismatch: the evidence that makes Distribution `PASS` for this candidate is evidence of a lagging signal, not a mechanism the founder can execute on day one.
+- **eBay Certified Provider directory**: already confirmed `BLOCKED` in `DISTRIBUTION_GATE.md` — requires "a number of proven customer references," closed to a true new entrant. Re-verification not repeated here (no contradiction found).
+- **Selling the service as a native eBay listing** (Classified Ad / Information Products category — a mechanism not previously tested in `DISTRIBUTION_GATE.md`, checked here only because Question 2 explicitly invites "another documented organic mechanism"): eBay's Services Policy (ebay.com/help/policies/prohibited-restricted-items/services-policy?id=4326, primary, accessed 2026-09-23) does not itself state a seller-history requirement, but independent secondary sources describe eBay's digital-product/service listing approval as typically requiring "a strong and long-standing history of positive sales" and note eBay provides no seller protection for services and does not support digital delivery (e.g. by email). This was not confirmed on an eBay-owned page, so it is **not relied upon either way** — marked `INCONCLUSIVE` and explicitly not used to unblock the experiment, consistent with not interpreting ambiguity optimistically. Fully resolving it would require new Distribution-gate-level verification, out of scope for this readiness check.
+- **Etsy seller forums**: already confirmed no usable evidence in `DISTRIBUTION_GATE.md`, and further restricted (private forum, limited API access) — not re-investigated.
+- **Shopify App Store**: already confirmed review/install-weighted and a weak fit for this buyer in `DISTRIBUTION_GATE.md`; also not applicable to a manually-fulfilled service offer in the first place (it is a venue for installable apps).
+
+**Conclusion:** no mechanism was found, within this project's evidence base, that a founder can directly and compliantly execute to reach the first paying sellers without either violating eBay's own policies or violating this task's explicit anti-bias rules (no astroturfing, no asking friends to recommend, no disguised advertising, no hiding commercial intent). Per the Critical Decision Rule, this is recorded as `BLOCKED`, not resolved with an invented workaround.
+
+### 21.3 Etsy fulfillment feasibility
+
+**PASS**
+
+Two workflows, both avoiding any request for the seller's password/credentials, are confirmed current as of 2026-09-23:
+
+- **Etsy Shared Shop Access** (valueaddedresource.net, independent trade press, article dated ~September 2026, corroborated by search-indexed content from help.etsy.com's own "How to Add Team Members to Your Shop" article): a shop owner can invite up to five collaborators, each using **their own separate Etsy account** — "instead of sharing the owner's login credentials." A team member "can manage orders, including buying shipping labels and adding tracking, create and publish listings and respond to buyer messages," but explicitly cannot "cancel or refund orders, delete or deactivate listings, or access finances, marketing, Stats, settings, apps or performance information." Described as "rolling out now" / "available to all sellers in the coming days" as of the source's publication — current, but not necessarily yet available to every individual seller the experiment might reach.
+- **Official Etsy CSV bulk import** (via the seller's own Shop Manager — secondary-sourced description, not independently re-verified against Etsy's own page in this pass): free, but "limited, with no images and error-prone formatting." This is the zero-access fallback: the founder prepares a completed CSV and item-specifics/template spreadsheet and hands it to the seller, who runs the import themselves using their own account — the founder never touches the seller's Etsy account at all. The real limitation is that photos are not carried by this import path and would need a separate step (the seller adding photos, guided by the founder's notes matching each row to a listing).
+
+**Conclusion:** a credential-safe fulfillment path exists either way. The Shared Access route is preferable (lets the founder do the listing work directly, matching the original plan) but is a newly-rolling-out feature not confirmed available to every seller yet; the CSV route is a fully safe fallback with a real, disclosed limitation on images. Either way, this remains genuinely **manual** work (collaborator access permits creating listings one at a time; there is no evidence collaborators can authorize third-party bulk tools, since "apps" access is explicitly excluded from their permissions) — consistent with the "no software built" constraint, not a blocker to it.
+
+### 21.4 Payment experiment readiness
+
+**NOT READY**
+
+**Exact reason:** the experiment's distribution mechanism (§8) depends on the founder directly disclosing and offering a paid service inside eBay Community threads. That behavior is directly prohibited by eBay's own Community Content Policy, with no applicable exception (§21.1). The one channel with actual confirmed Distribution-gate evidence — peer recommendation — is not a mechanism the founder can originate without either violating platform policy (asking someone to post it) or violating this task's own anti-bias rules (astroturfing, fake peer recommendation) (§21.2). This is a distribution-side blocker, not a fulfillment-side one: Etsy fulfillment itself is confirmed workable (§21.3). Per the Critical Decision Rule, the correct outcome is `NOT READY`, not a forced attempt through the only channel available.
+
+### 21.5 Minimal changes required to the experiment
+
+Only what is actually necessary, not a redesign of the offer, price, or wedge (none of which are implicated by these findings):
+
+1. **§8 (Distribution mechanism) must be replaced.** The "reactive, disclosed founder participation" mechanism cannot be used as written. No compliant replacement was identified within this task's scope (§21.2) — this is not a drafting fix, it is an unresolved precondition. The offer itself (§9), price band (§10), and fulfillment plan (§11) do not need to change.
+2. **§11 (Manual fulfillment) should be updated, once distribution is resolved,** to specify the now-confirmed Etsy Shared Shop Access collaborator invite as the primary credential-safe mechanism, with the seller-run CSV import (with a disclosed images limitation) as the documented fallback — replacing the earlier, unverified "collaborator/shop-manager access... if bulk tools require it" language with these confirmed specifics.
+3. **No changes are required to §9, §10, §12, §13, §14, §15, or §16** — the offer, price test, buyer-action funnel, and success/failure/what-counts rules are unaffected by this readiness check; they were never the blocker.
+
+### 21.6 Open assumptions
+
+Only what remains material after this research:
+
+- **Whether a genuinely compliant, founder-executable, no-cold-outreach acquisition mechanism exists at all for this candidate.** This is now the single open question the whole candidate's Validation readiness turns on — not a research gap to casually fill, since the two most plausible candidates (peer recommendation, eBay services listing) were checked and neither qualifies within current evidence.
+- **`INCONCLUSIVE`, not further pursued here: whether eBay's Classified-Ad/Information-Products services-listing route is viable for a genuinely new/small seller.** Not confirmed on an eBay-owned source; would need its own scoped, Distribution-gate-style verification (buyer presence, current approval rules, concrete newcomer evidence) before it could responsibly unblock anything.
+- **Whether Etsy's Shared Shop Access feature is actually available to whichever specific seller(s) the (still-undesigned) compliant acquisition mechanism eventually reaches** — described as rolling out, not confirmed universal, as of the source date.
+- **Whether eBay's enforcement in practice is stricter or looser than the literal policy text** was not tested by this desk research and is not treated as grounds to proceed regardless — per the task's own instruction, ambiguity is resolved toward `BLOCKED`, and this remains the operative reading unless a materially new fact (not a reinterpretation of the same text) is found.
+
+---
+
 ## Summary
 
 1. **The exact validation experiment:** genuine, disclosed, reactive participation in the eBay Community Seller Tools forum, offering a one-time, hand-delivered batch cross-listing (eBay → Etsy) plus a portable item-specifics/template spreadsheet, for $19–$39, paid upfront before any manual work begins.
