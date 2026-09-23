@@ -431,10 +431,125 @@ No change is required to the wedge (§5), the offer's substance (§9), the price
 
 ---
 
+## 24. Final Validation Launch Readiness
+
+*Task 13. This is the final readiness gate for this candidate. It does not reopen Discovery, search for another distribution channel or candidate, or redesign the product. It closes the open items carried from §22/§23 and issues the final launch decision. No further research task on this candidate is authorized after this section — see §24.9.*
+
+### 24.1 Wedge validation
+
+**The wedge is unchanged and is not blocked by anything found in §21–§23:**
+
+> One-time manual eBay → Etsy cross-listing of a defined batch of active listings, plus a portable seller-owned spreadsheet containing item-specifics/template data.
+
+No subscription, no software, no API, no credentials, no ongoing sync — confirmed still true of the design finalized below. Nothing in the Fiverr policy check (§23.2), Etsy fulfillment check (§23.3), eBay data-input check (§23.4), or economics review (§23.5) forces a change to the wedge itself; every correction found so far (the Etsy CSV-fallback error, §21.3) was a fulfillment-description error, not a wedge problem. The wedge stands as originally defined in §5.
+
+### 24.2 Corrected validation event definition
+
+§23's "an Order is a paid event" was directionally correct but not precise enough to serve as a counted validation event on its own, because a Fiverr Order can still be reversed after payment. Using Fiverr's own order-status vocabulary (help.fiverr.com/hc/en-us/articles/37332473202065-The-complete-guide-to-your-Fiverr-order-Statuses-and-process, and Fiverr's Payment Terms §5, both primary, previously verified in Task 12 and re-confirmed here): an order moves **In Progress → (Delivered) → Completed** (marked complete when the buyer accepts delivery, or automatically 3 days after delivery if the buyer takes no action), or it can be **Cancelled** (full cancellation, funds returned to the buyer's Fiverr Balance) at various points — including, per Fiverr's Payment Terms §5.2, **up to 14 days after an order is marked Completed**, if Customer Support finds misconduct or a policy violation. Separately, a seller may issue a **partial refund** on a Completed order (Payment Terms §5.4) without a full cancellation.
+
+**The counted validation event is therefore defined precisely as:**
+
+> A Fiverr order that reaches **"Completed"** status (delivered by the founder and accepted by the buyer, or auto-completed) **and remains Completed — not Cancelled, and with no full or partial refund issued — through the end of Fiverr's 14-day post-completion cancellation-eligibility window (7 days for Top Rated Sellers)** — placed by a buyer who (a) has no prior personal, family, or business relationship with the founder, (b) is not the founder's own account, a solicited "friendly" purchase, or otherwise self-funded, and (c) engaged with the order as a real buyer would: submitting real listing data as the order's requirements and accepting a real, delivered outcome.
+
+**Does not count:** Cancelled orders (at any point, including within the 14-day post-completion window); orders with any refund, full or partial; orders from friends, family, or anyone with a prior relationship to the founder; orders the founder places or funds through another account to simulate demand; and orders where no real requirements were ever submitted (Fiverr auto-cancels an order after 14 days with no requirements submitted, which functions as a built-in filter against exactly this case — see §24.2's operational note below).
+
+**Operational note:** "no prior relationship" and "genuinely intended to use the service" are not independently auditable by a third party — as in the original gate (§16), this relies on the founder's own honest accounting, same as it did for the eBay Community version of this experiment. Fiverr's own mechanics provide a partial, structural safeguard here that the original eBay Community design did not have: a buyer who never submits real requirements causes the order to auto-cancel, and Fiverr's Resolution Center exists specifically to catch and reverse orders where no genuine service was delivered — so a fabricated "purchase" that never proceeds to real delivery is disproportionately likely to self-filter out of the Completed-and-unreversed definition above, unlike a one-off forum reply that had no analogous built-in check.
+
+### 24.3 Replacing the weak FAIL threshold
+
+§23.6's threshold (50 impressions + 10 clicks, or 5 messages) is replaced with the bounded exposure rule specified for this task. Fiverr's own terminology for "impressions" and "gig clicks/views" is unchanged from §23.6 (help.fiverr.com/hc/en-us/articles/360010750238-Viewing-sales-analytics, primary) — these are the platform's actual metric names, not adapted or renamed here.
+
+- **PASS:** at least **3 independent Completed, paid, non-refunded orders**, per the §24.2 definition, within **30 days** of the gig going live.
+- **FAIL:** **zero** orders meeting the §24.2 definition, despite reaching, within the same 30-day window, either:
+  - **A. Search exposure threshold:** at least **1,000 gig impressions AND at least 20 gig clicks/views**; **or**
+  - **B. High-intent inquiry threshold:** at least **10 independent buyer inquiries** (Fiverr inbox messages) in which the buyer clearly describes a need matching the exact eBay→Etsy cross-listing offer — not a generic "hi" or unrelated inquiry.
+- **INCONCLUSIVE:** neither failure threshold (A or B) is reached within the 30-day window — meaning the gig did not get enough real exposure or genuine inbound interest to judge demand either way, which is a different finding from buyers seeing a real offer and declining it.
+
+**These thresholds (3 orders, 1,000 impressions, 20 clicks, 10 inquiries, 30 days) are explicit experiment assumptions set for this specific bounded test, not empirically established Fiverr or e-commerce conversion benchmarks.** No source in this project's research base establishes what impression/click/order rate a new eBay/Etsy-cross-listing gig should expect (§23.8.B named this directly as the one remaining open uncertainty) — these numbers exist to make the FAIL/INCONCLUSIVE distinction bounded and falsifiable, not to claim predictive accuracy. What counts toward PASS is unchanged from §16/§23.6: only a Completed, paid, non-refunded, independent order — never likes, favorites, saved gigs, messages alone, drafts, or hypothetical interest.
+
+### 24.4 Price / fulfillment economics
+
+Fiverr's fee (confirmed primary, Task 12: flat 20% seller fee, i.e., seller earns 80% of the purchase amount — fiverr.com/legal-portal/legal-terms/payment-terms-of-service):
+
+| Package | Gross | Approx. net after Fiverr fee (80%) | Max manual fulfillment time |
+| ------- | ----: | ----------------------------------: | ---------------------------: |
+| Small   |   $19 |                               $15.20 |                     ~2 hours |
+| Medium  |   $29 |                               $23.20 |                     ~3 hours |
+| Large   |   $39 |                               $31.20 |                     ~4 hours |
+
+**How the time caps were set (simple model, not a cost-optimization exercise):** §23.5 already established a working estimate of roughly several minutes of real, unavoidable manual work per Etsy listing (photo upload, description, price, item-specifics, shipping profile — no bulk-create path exists for anyone, per §23.3), plus a roughly fixed 20–30 minutes per order for compiling the item-specifics spreadsheet and buyer communication. The batch sizes in §24.5 below are sized so that, at that per-item rate, each package's total manual labor stays under its stated time cap. This is not a minimum-wage target (the resulting effective rate is roughly $7–8/hour, openly acknowledged as thin, per §23.5) — it is a **founder-protection ceiling**: the practical constraint this task asked for is that a single successful order must not be able to consume an unbounded, open-ended amount of the founder's time, since the price is fixed and paid upfront before the batch size risk is known in detail. If a specific real batch would clearly exceed its tier's time cap once the seller's actual data arrives, the founder should renegotiate or decline before starting work, not silently absorb unbounded hours.
+
+**Is the $19 package obviously uneconomic?** No — it is thin (already flagged in §23.5) but bounded: at ~2 hours maximum for $15.20 net, a single Small order cannot consume more than a fraction of a founder's day, which is what keeps the experiment "economically meaningless" from becoming a real risk. This is not being presented as a viable long-run unit economic (§23.5's flag to revisit pricing before scaling past the pilot stands unchanged) — it is being confirmed as *boundable enough for a validation pilot specifically*, which is the narrower question this task asks.
+
+### 24.5 Package design
+
+Three tiers, each a clearly bounded manual outcome — no "unlimited," no "full store migration," no open-ended scope:
+
+| | **Small — $19** | **Medium — $29** | **Large — $39** |
+|---|---|---|---|
+| Max listings | **5** active eBay listings | **10** active eBay listings | **15** active eBay listings |
+| Buyer receives | Live Etsy listings for the same 5 items + item-specifics/template spreadsheet (5 rows) | Live Etsy listings for the same 10 items + spreadsheet (10 rows) | Live Etsy listings for the same 15 items + spreadsheet (15 rows) |
+| Etsy publication included | Yes | Yes | Yes |
+| Portable spreadsheet included | Yes | Yes | Yes |
+| Delivery time | 3 business days | 4 business days | 5 business days |
+| Max founder time | ~2 hours | ~3 hours | ~4 hours |
+
+**Explicitly out of scope for every tier (must be stated in the gig, per §24.7):** more than the stated number of listings; any marketplace other than eBay→Etsy; ongoing sync, relisting, or maintenance after delivery; new product photography or photo editing beyond what the seller already provides; Etsy shop branding, SEO, or advertising setup; and any guarantee about post-publish sales performance (this also keeps the offer clear of Fiverr's own ban on "misleading guarantees & unverifiable outcomes," confirmed in §23.2).
+
+The Small tier is deliberately the smallest bounded unit that still delivers the whole wedge (both a live Etsy batch and the spreadsheet) — this is what lets it serve as the minimum-fulfillment-risk way to test willingness to pay, per this task's instruction.
+
+### 24.6 No-credentials rule
+
+The gig, and the actual fulfillment workflow, must state and follow, exactly:
+
+> **No eBay or Etsy password is required.**
+
+**Workflow (final, corrected — carrying forward the §21.3/§23.3 correction that Etsy has no CSV bulk-*create* feature; this must not be reintroduced):**
+
+1. The buyer provides their listing data using a seller-controlled method: an eBay Seller Hub "All active listings" report (CSV/XLS, seller exports it themselves — §23.4), or a manual CSV/screenshot handoff.
+2. If the buyer is able and willing to use Etsy's own **Shared Access** feature (§23.3, confirmed current and primary-sourced), they invite the founder as a team member through Etsy's official Shop Manager flow — the founder signs in with their **own** Etsy account and never sees the buyer's password.
+3. If Shared Access is declined or unavailable, the founder instead prepares a complete, ready-to-copy reference sheet (finished title/description/price/item-specifics per listing) and the **buyer publishes each listing themselves** in their own account. This is the corrected fallback — not a CSV bulk-import, which Etsy does not offer for creating new listings.
+4. No account passwords are requested, received, or stored by the founder at any point, under either path.
+
+### 24.7 Final gig requirements
+
+The published gig must state, plainly and without marketing hype, all of the following:
+
+- This is a **one-time, manually performed service** — not a subscription, not automated, not ongoing.
+- The route is specifically **eBay → Etsy**: taking a defined batch of the buyer's existing active eBay listings and publishing the same items as new Etsy listings.
+- The **exact batch size per package** (5 / 10 / 15 listings — §24.5), and that additional items beyond that count are not included.
+- The **price** for each package ($19 / $29 / $39) and that it is a one-time, upfront payment through Fiverr's own checkout.
+- The **delivery time** per package (3 / 4 / 5 business days — §24.5).
+- **"No eBay or Etsy password is required"** (§24.6), stated explicitly, naming Etsy's own Shared Access feature as the mechanism when used.
+- That the **buyer keeps full ownership and control of their own eBay and Etsy accounts** at all times — the founder never gains account-owner-level access to either.
+- That the work is done **by hand**, by the founder personally, with no bots, no third-party automation tools, and no AI-generated listing content beyond what the buyer supplies.
+- **What the buyer receives:** the live Etsy listings for the stated batch, plus a spreadsheet containing the item-specifics/template data for those same listings, which is the buyer's to keep regardless of anything else.
+- **What is not included:** anything beyond the stated batch size; marketplaces other than eBay/Etsy; ongoing sync or relisting; new photography; Etsy shop setup, branding, SEO, or ads; and any guarantee of future sales.
+
+A compliant, non-hype draft consistent with all of the above (illustrative, not mandated wording):
+
+> *"I'll manually take up to [5/10/15] of your current active eBay listings and publish the same items as new listings on Etsy — plus send you a spreadsheet with your item-specifics/template data for those items, yours to keep. This is a one-time job, not a subscription: no software, no bots, no ongoing sync. No eBay or Etsy password is required — I do the Etsy side either through Etsy's own Shared Access feature (you invite me, I use my own login, you can remove access anytime) or by handing you ready-to-paste listing content if you'd rather publish it yourself. You keep full control of both accounts throughout. Delivery in [3/4/5] business days. Doesn't include: more than [5/10/15] items, other marketplaces, ongoing maintenance, new photos, or any sales guarantee."*
+
+### 24.8 Final strategic decision
+
+**Validation status: LAUNCH VALIDATION**
+
+Applying the rule as given: Fiverr policy is clear (§23.2, no prohibition applies); fulfillment is possible without any seller credentials (§23.3/§24.6, confirmed via Etsy's own Shared Access plus a corrected credential-free fallback); eBay data input needs no credentials either (§23.4); economics are thin but bounded and viable enough for a bounded manual pilot, not for indefinite scaling (§24.4); and the offer is now packaged into three clearly bounded tiers with explicit scope limits (§24.5/§24.7). No compliance, fulfillment, or economic blocker remains that a small revision could not already have fixed — and every such revision identified across §21–§24 (the Etsy CSV-fallback correction, the Fiverr-native funnel, the bounded package sizes and time caps, the precise validation-event definition) has been made directly within this and the preceding gate, not deferred.
+
+**Exact remaining uncertainty (not a blocker, not a reason for further research):** whether a brand-new, zero-review gig gets enough organic impressions and clicks within 30 days to be judged at all, in a category with 220+ existing competing gigs (named in §23.8.B). Per §24.9, this is not resolved by more research — it is exactly what running the gig and applying §24.3's thresholds will answer.
+
+### 24.9 Final stop rule
+
+No further research gate is authorized for this candidate. The next action is to publish the Fiverr gig as specified in §24.5–§24.7 and run the 30-day measurement window defined in §24.2–§24.3. If the result is `PASS`, proceed per §18 (unchanged). If `FAIL`, proceed per §19 (unchanged) — a clean FAIL is evidence toward killing this specific wedge/offer, not automatically the whole candidate. If `INCONCLUSIVE`, record it as such per `DECISION.md` and do not silently extend the window or open a new research task asking whether Fiverr "really" has enough traffic — the experiment itself is now the only further source of evidence for this candidate.
+
+---
+
 ## Summary
 
-1. **The exact validation experiment:** genuine, disclosed, reactive participation in the eBay Community Seller Tools forum, offering a one-time, hand-delivered batch cross-listing (eBay → Etsy) plus a portable item-specifics/template spreadsheet, for $19–$39, paid upfront before any manual work begins.
-2. **Why this tests willingness to pay rather than interest:** the experiment's only counted signal is an actual, upfront, independent payment for an immediately-deliverable, concretely-scoped outcome (§13, §16) — there is no waitlist, survey, or hypothetical framing anywhere in the funnel; a seller either pays before fulfillment starts, or the interaction does not count.
-3. **The exact success/failure rule:** `PASS` at ≥3 independent paid sellers within 30 days; `FAIL` at 0 payments after ≥15 genuinely-engaged qualified opportunities within 30 days; `INCONCLUSIVE` if fewer than 15 qualified opportunities arise, or if forum moderation blocks participation before that threshold is reached.
-4. **The smallest manual workflow required:** one person, by hand, using eBay's own export/reporting tools and Etsy's own bulk-listing tools, with no seller credentials requested and no software built — a spreadsheet and a live Etsy batch, delivered per paying seller.
-5. **The main assumption that remains untested:** whether eBay's Community moderation will tolerate the founder's own reactive, transparently-disclosed paid-service offer in reply to a real seller's question — the confirmed Distribution evidence is of peer recommendation of an existing product, not of this specific behavior, and the experiment must begin at very small scale specifically to observe this before it can be relied upon at all.
+*Superseded 2026-09-23 (Task 13, §24) — the eBay Community-based version of this Summary is preserved in git history; the eBay Community distribution mechanism itself was found `BLOCKED` (§21) and replaced by the Fiverr-based mechanism (§22, PASS), which this Summary now reflects as the launch-ready design.*
+
+1. **The exact validation experiment:** a single Fiverr gig, in three bounded packages (5/10/15 eBay listings for $19/$29/$39 — §24.5), offering a one-time, hand-delivered batch cross-listing (eBay → Etsy) plus a portable item-specifics/template spreadsheet, paid upfront through Fiverr's own checkout before any manual work begins. No eBay or Etsy password is ever requested (§24.6).
+2. **Why this tests willingness to pay rather than interest:** the experiment's only counted signal is a Completed, paid, non-refunded Fiverr order from an independent buyer (§24.2) for an immediately-deliverable, concretely-scoped outcome — there is no waitlist, survey, or hypothetical framing anywhere in the funnel; a buyer either pays through Fiverr before fulfillment starts and the order survives the post-completion cancellation window, or it does not count.
+3. **The exact success/failure rule (§24.3):** `PASS` at ≥3 qualifying orders within 30 days; `FAIL` at 0 qualifying orders despite ≥1,000 gig impressions and ≥20 clicks, or ≥10 genuine on-topic buyer inquiries, within 30 days; `INCONCLUSIVE` if neither exposure threshold is reached in that window.
+4. **The smallest manual workflow required:** one person, by hand, using eBay's own Seller Hub Reports export and Etsy's own Shared Access feature (or a founder-prepared reference sheet the buyer self-publishes, if Shared Access isn't used) — no seller credentials requested and no software built — a spreadsheet and a live Etsy batch, delivered per paying buyer within the package's stated time (§24.5).
+5. **The main assumption that remains untested:** whether a brand-new gig can get enough organic impressions/clicks within 30 days to be judged at all in a 220+-listing competitive category (§23.8.B) — this is not a blocker and is not being further researched; it is exactly what running the experiment will answer (§24.9).
