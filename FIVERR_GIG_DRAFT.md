@@ -2,7 +2,7 @@
 
 *Task 13A. Copy preparation only. Source of truth for scope, price, and criteria: `VALIDATION_GATE.md` §24 (status: LAUNCH VALIDATION). Nothing here changes the candidate, wedge, prices, packages, validation criteria, or distribution strategy.*
 
-**How to use this file:** everything inside a `text` block below is paste-ready. Character counts are given for fields Fiverr limits. The limits used (title 80, description 1,200, package name 35, package description 100, FAQ answer 300, 5 tags) are from general knowledge of Fiverr's gig editor, **not** verified against a current Fiverr primary source. Re-check them in the editor when publishing (see "Human input required" in section 11).
+**How to use this file:** everything inside a `text` block below is paste-ready. Character counts are given for fields Fiverr limits. Which limits and rules are verified against Fiverr primary sources, and which are still unverified, is recorded in section 12 (Task 13C); it overrides earlier statements in sections 1-11 where they differ.
 
 ---
 
@@ -30,7 +30,7 @@ Reserve tags, in this order, if any of the above is rejected: `cross listing`, `
 
 ## 3. Full gig description
 
-Fits within Fiverr's 1,200-character description limit (1166 characters). It already contains the "What you will receive" and "What I need from you" blocks (sections 9 and 8).
+Fits within Fiverr's 1,200-character description limit (1190 characters). It already contains the "What you will receive" and "What I need from you" blocks (sections 9 and 8).
 
 ```text
 I manually move a small batch of your active eBay listings to Etsy and send you a spreadsheet of your item-specifics/template data to keep. One-time job: no software, no bots, no subscription.
@@ -46,11 +46,11 @@ WHAT YOU WILL RECEIVE
 WHAT I NEED FROM YOU
 - Your eBay Seller Hub "All active listings" report and listing links
 - Which listings to move
-- An existing Etsy shop (plus the Shared Access invite, if chosen)
+- An existing Etsy shop (required; don't order without one)
 - Your Etsy price and shipping choices
 
 NOT INCLUDED
-More listings than your package, other marketplaces, ongoing sync, photography/editing, Etsy shop setup/SEO/ads, sales guarantees. Etsy's fees are yours. Items must be allowed under Etsy's seller policies.
+More listings than your package, other marketplaces, ongoing sync, photography/editing, Etsy shop setup/SEO/ads, sales guarantees. Etsy's fees are yours. Items must follow Etsy's seller policies. 1 revision: fixes to my own errors only.
 
 I only use the information in your listings; I don't write new listing content.
 ```
@@ -62,14 +62,15 @@ I only use the information in your listings; I don't write new listing content.
 | | Basic | Standard | Premium |
 |---|---|---|---|
 | **Name** (≤35) | `5 Listings: eBay to Etsy` (24) | `10 Listings: eBay to Etsy` (25) | `15 Listings: eBay to Etsy` (25) |
-| **Description** (≤100) | `Up to 5 eBay listings to Etsy + item-specifics spreadsheet. 3 days. No password needed.` (87) | `Up to 10 eBay listings to Etsy + item-specifics spreadsheet. 4 days. No password needed.` (88) | `Up to 15 eBay listings to Etsy + item-specifics spreadsheet. 5 days. No password needed.` (88) |
+| **Description** (≤100) | `Up to 5 eBay listings to Etsy + item-specifics spreadsheet. 5 days. No password needed.` (87) | `Up to 10 eBay listings to Etsy + item-specifics spreadsheet. 6 days. No password needed.` (88) | `Up to 15 eBay listings to Etsy + item-specifics spreadsheet. 7 days. No password needed.` (88) |
 | **Price** | $19 | $29 | $39 |
-| **Delivery** | 3 days | 4 days | 5 days |
+| **Delivery** (Fiverr delivery field, days) | 5 days | 6 days | 7 days |
 | **Listings** | up to 5 | up to 10 | up to 15 |
+| **Revisions** (Fiverr field) | 1 | 1 | 1 |
 | **Etsy listings published (Shared Access) or ready-to-copy sheet (self-publish)** | Yes | Yes | Yes |
 | **Item-specifics spreadsheet** | Yes | Yes | Yes |
 
-Fiverr package-editor notes: no gig extras, no fast-delivery add-on, no additional services (out of scope for this task). The **Revisions** field is required by Fiverr and its value was not specified in the approved offer. See section 11.
+Fiverr package-editor notes: no gig extras, no fast-delivery add-on, no additional services (out of scope for this task). Revisions and delivery values are set in section 12 (delivery: 5 / 6 / 7 days = the approved 3 / 4 / 5 business days, see 12.3; revisions: 1, defined narrowly in 12.2).
 
 ---
 
@@ -80,7 +81,7 @@ Shown to the buyer after ordering. Fiverr auto-cancels an order if requirements 
 **Intro / instruction text (if the editor offers one):**
 
 ```text
-Please send the details below so I can start. NEVER send me any password (eBay, Etsy, or email). I don't need one.
+Please send the details below so I can start. Your delivery time starts when you submit them. NEVER send me any password (eBay, Etsy, or email). I don't need one.
 ```
 
 **Question 1 — Attachment (required)**
@@ -95,16 +96,16 @@ Upload your eBay listing data. In eBay Seller Hub: Reports tab > Download > List
 Which listings should I move? Paste the eBay item numbers or links for the listings, up to the number in your package.
 ```
 
-**Question 3 — Multiple choice (required)**
+**Question 3 — Multiple choice (required, single option)**
 
 ```text
-Do you already have an Etsy shop? (Yes / No)
+An existing Etsy shop is required. Etsy shop setup is not included in this gig. If you don't have an Etsy shop yet, please don't submit this order until you have one; message me here and we'll cancel it through Fiverr. (I confirm I already have an Etsy shop)
 ```
 
 **Question 4 — Multiple choice (required)**
 
 ```text
-How should the Etsy side be done? (A) Etsy Shared Access: I'll invite you as a team member, you sign in with your own account, nothing else needed. (B) I'll publish the listings myself from your ready-to-copy sheet.
+How should the Etsy side be done? (A) Etsy Shared Access: you invite me as a team member from your Etsy Shop Manager and I sign in with my own Etsy account. After you submit this, I'll send you the email address to invite here in the Fiverr order chat. (B) I'll publish the listings myself from your ready-to-copy sheet. No passwords either way.
 ```
 
 **Question 5 — Free text (required)**
@@ -125,13 +126,13 @@ Anything Etsy-specific you want included that eBay doesn't have (for example tag
 Please confirm: I own these listings and photos, and my items are allowed under Etsy's seller policies. (I confirm)
 ```
 
-Note on Shared Access (used in the order chat after answer 4 = A; not a form field): Etsy Shared Access invitations expire after 7 days (`VALIDATION_GATE.md` §23.3, Etsy primary source), so the buyer should be asked to send the invite promptly.
+Note on Shared Access (used in the order chat after answer 4 = A; not a form field): Etsy Shared Access invitations expire after 7 days (`VALIDATION_GATE.md` §23.3, Etsy primary source), so the buyer should be asked to send the invite promptly. The exact way the founder's Etsy email is sent is fixed in section 12.6.
 
 ---
 
 ## 6. FAQ
 
-Each answer is ≤300 characters. Select the ones you want; the order below is recommended, most trust-critical first.
+Each answer is ≤300 characters (assumed limit, see 12.4). Fiverr allows up to 10 FAQs (verified, 12.4); this list is exactly 10. The order is recommended, most trust-critical first.
 
 **Q: Do you need my eBay or Etsy password?**
 
@@ -149,6 +150,18 @@ Through Etsy's own Shared Access feature. You invite me as a team member; I sign
 
 ```text
 Then I prepare a ready-to-copy sheet with the finished title, description, price, category and item-specifics text for each listing, and you publish them yourself in your own Etsy account. Etsy has no bulk upload for new listings, so this is done listing by listing.
+```
+
+**Q: Do I need an Etsy shop already?**
+
+```text
+Yes. An existing Etsy shop is required. Etsy shop setup is not included in this gig. If you don't have a shop yet, please don't order until you do.
+```
+
+**Q: What does the 1 included revision cover?**
+
+```text
+1 revision, for correcting errors I introduced while listing or preparing the spreadsheet. It does not cover additional listings, new content, new requirements, a bigger scope, or changes because the information you supplied changed.
 ```
 
 **Q: Is this automated?**
@@ -225,7 +238,7 @@ By hand. No password.
 ```text
 - The same items published on Etsy (Shared Access) OR a ready-to-copy sheet so you can publish them yourself
 - A spreadsheet with the item-specifics/template data for those items, yours to keep
-- Delivered within your package time: 3, 4 or 5 days
+- Delivered within your package time: 5, 6 or 7 days (counted from when you submit the requirements)
 ```
 
 ---
@@ -238,28 +251,104 @@ Not to be pasted into the gig. Recorded here so the copy above stays traceable t
 - Net after Fiverr's 20% fee: $15.20 / $23.20 / $31.20.
 - Counted validation event, PASS/FAIL/INCONCLUSIVE thresholds: unchanged, `VALIDATION_GATE.md` §24.2–§24.3.
 - Excluded on purpose: Fiverr Ads, gig extras, other marketplaces, subscriptions, external links or contact details in the gig text, any wording that promises automation or bulk Etsy CSV creation.
+- Buyer answers "no Etsy shop" or cannot confirm Q3: do not start work; reply in the Fiverr order chat that shop setup is not included and cancel through Fiverr's own order flow. Such an order does not count toward the validation event (`VALIDATION_GATE.md` §24.2). Shop setup is never added as a service.
 - Etsy Shared Access: a team member's Etsy account/email cannot be attached to another Etsy shop, so the founder can assist only one seller's shop at a time with a single dedicated Etsy account (`VALIDATION_GATE.md` §23.3). Fine for a first order; relevant if two orders arrive at once.
 
 ---
 
 ## 11. Publication checklist and human input
 
-### Character counts (verify at publish)
+*Superseded in part by section 12 (Task 13C). Kept as the record of what Task 13A left open; the status of each item is in section 12.*
 
-| Field | Count | Limit used |
+### Character counts (final, re-verified by script on the text blocks above)
+
+| Field | Count | Limit |
 |---|---:|---:|
-| Title | 73 | 80 |
-| Description | 1166 | 1,200 |
-| Package names | 24 / 25 / 25 | 35 |
-| Package descriptions | 87 / 88 / 88 | 100 |
-| FAQ answers | 133 / 217 / 266 / 142 / 166 / 158 / 201 / 148 | 300 |
+| Title | 73 | 80 (12.4) |
+| Description | 1190 | 1,200 (12.4, verified) |
+| Package names | 24 / 25 / 25 | 35 (unverified) |
+| Package descriptions | 87 / 88 / 88 | 100 (unverified) |
+| FAQ answers (10) | 133 / 217 / 266 / 147 / 233 / 142 / 166 / 158 / 201 / 148 | 300 (unverified) |
 
 ### Human input required before publication
 
-1. Confirm Fiverr's current field limits in the gig editor (assumed above, not verified).
-2. Choose the gig **category/subcategory** in Fiverr's editor. `VALIDATION_GATE.md` §22.3/§22.8 names the eBay listing / Etsy listing / cross-listing placement; the exact menu path was not checked.
-3. Set **Revisions** on each package (required by Fiverr; not specified in the approved offer). Suggested default: 1 revision limited to fixing the founder's own errors in the delivered batch. Unlimited revisions would break the founder-time ceilings.
-4. Decide how the buyer receives the founder's **Etsy account email** for the Shared Access invite, because Fiverr restricts sharing contact details in messages. Not verified against Fiverr's messaging rules. A dedicated Etsy account with 2FA enabled (team members must enroll in 2FA, §23.3) must exist first.
-5. Confirm **"3 / 4 / 5 days"** as Fiverr *calendar* days. `VALIDATION_GATE.md` §24.5 says *business* days; Fiverr's delivery field is set in days. The copy says "days" to match the approved offer. Choose whether to pad the field.
-6. Create the gallery image(s) from section 7.
-7. Read the description once more against Fiverr's own rules on external links/contact details (none are included).
+See section 12.7 for the final list.
+
+---
+
+## 12. Final publication settings
+
+*Task 13C. Operational patch only: no change to candidate, wedge, prices, package sizes, delivery concept, validation thresholds, or distribution channel. Fiverr sources below were fetched live on 2026-09-24 (help.fiverr.com and fiverr.com, primary). Nothing here was researched beyond the mechanics of publishing this one gig.*
+
+### 12.1 Etsy shop requirement
+
+An existing Etsy shop is now explicitly required, in five places, so a buyer cannot read the gig as including shop creation:
+
+1. Description, "What I need": `An existing Etsy shop (required; don't order without one)`. "Etsy shop setup" stays in NOT INCLUDED.
+2. FAQ: `Do I need an Etsy shop already?` Answer: `Yes. An existing Etsy shop is required. Etsy shop setup is not included in this gig. If you don't have a shop yet, please don't order until you do.`
+3. Requirements Question 3, now a single-option confirmation (a buyer without a shop has no honest option to click): `An existing Etsy shop is required. Etsy shop setup is not included in this gig. If you don't have an Etsy shop yet, please don't submit this order until you have one; message me here and we'll cancel it through Fiverr. (I confirm I already have an Etsy shop)`
+4. Section 8 ("What I need from you") already lists it.
+5. Shop setup is not offered as a service anywhere.
+
+### 12.2 Revisions: set to **1** on all three packages
+
+Verified: Fiverr requires "at least one revision option per package" (help.fiverr.com/hc/en-us/articles/360010451397). Revision count is a per-package field. Exact definition (used in the FAQ and, in short form, in the description):
+
+- **Covered:** correcting errors I (the seller) introduced during fulfillment, in the listings or in the spreadsheet.
+- **Not covered:** additional listings; new content; new requirements; scope expansion; changes caused by the buyer changing information they supplied.
+
+Published wording: FAQ `What does the 1 included revision cover?` and, in the description, `1 revision: fixes to my own errors only.` Fiverr's own text says the number of revisions a buyer can request "depends on what's included in your Gig package or agreed-upon order scope" (help.fiverr.com/hc/en-us/articles/360010639617), and tells sellers to "communicate promptly if any revision falls outside the original scope." Out-of-scope requests are declined in the order chat, with no extras or upsell offered.
+
+### 12.3 Delivery setting: **5 / 6 / 7 days** (Basic / Standard / Premium)
+
+**What Fiverr documents (primary):** the delivery time is set per package "in days" (help.fiverr.com/hc/en-us/articles/360010451397). No business-day option is documented anywhere in the pages checked, and the order page runs a countdown to a delivery date. The clock starts when the buyer submits requirements: "Once the client submits the requirements, the order moves to In Progress status, and you're expected to deliver within the specified timeframe" (help.fiverr.com/hc/en-us/articles/360010639617). Fiverr does not define "days" as calendar or business days in these pages, so the safe reading is calendar days.
+
+**Choice:** the approved experiment (`VALIDATION_GATE.md` §24.5) is 3 / 4 / 5 *business* days. Because the field cannot express business days and the clock can start on any weekday, the smallest calendar setting that always leaves at least the approved number of working days is 3 business days = at most 5 calendar days, 4 = 6, 5 = 7 (worst case: the clock starts on a Friday or a weekend). Setting the field to 3 / 4 / 5 would silently promise less working time than approved, so it is set to **5 / 6 / 7**. Founder-time ceilings (~2 / ~3 / ~4 hours) are unchanged. Package sizes, prices, and the 3 / 4 / 5 business-day design are unchanged; only the label in Fiverr's field differs. Package descriptions and the section 9 text were updated to 5 / 6 / 7 accordingly.
+
+**Safety valve, not a plan:** Fiverr lets a seller request a delivery extension from the order page (the buyer has 48 hours to respond; unanswered requests are auto-accepted). Late orders affect Fiverr's on-time metric (same source).
+
+**Owner decision left open:** if the owner prefers the shorter 3 / 4 / 5 labels for conversion reasons, that is a deliberate change to the approved experiment's timing and should be recorded as one, not made in the editor.
+
+### 12.4 Confirmed and unconfirmed Fiverr field limits
+
+| Item | Status | Source / note |
+|---|---|---|
+| Description: up to 1,200 characters | **Verified** (primary) | help.fiverr.com/hc/en-us/articles/360010451397 |
+| Search tags: up to 5 | **Verified** (primary) | same article |
+| FAQs: up to 10 | **Verified** (primary) | same article |
+| Title: up to 80 characters | **Verified** (primary, Pro Gig article; the general article gives no number) | help.fiverr.com/hc/en-us/articles/29454478348433 says "up to 80 characters." The standard-gig article says only "clear, descriptive" and to avoid `&`, `/`, `"`, `+`. Title uses none of these (hyphen only). |
+| Revisions required per package | **Verified** (primary) | 12.2 |
+| Delivery set in days per package | **Verified** (primary); unit not defined | 12.3 |
+| Packages: Basic / Standard / Premium, name + description + price + delivery each | **Verified** (primary) | help.fiverr.com/hc/en-us/articles/360010559138 |
+| Package name limit (35), package description limit (100) | **UNVERIFIED** | No primary page found that states a number. The editor shows a live counter; if it rejects the text, shorten. Current lengths are 24-25 and 87-88. |
+| Tag length limit, FAQ answer limit (300) | **UNVERIFIED** | Same. Tags are 12-14 characters; longest FAQ answer is 266. |
+| Category/subcategory | **NOT VERIFIABLE without the logged-in editor** | See 12.7. Fiverr says the category cannot be changed after publishing. |
+| Min price | Verified: $5 | Not a constraint. |
+| At least one gallery image required, up to 3, recommended 1280 x 769 px | **Verified** (primary) | Fiverr also says to use images you own, no copyrighted material. Text-only concept in section 7 complies. |
+
+### 12.5 Contact-information rule: findings
+
+- Terms of Service 8.1 (fiverr.com/legal-portal/legal-terms/terms-of-service): providing email addresses or other personal contact details "to communicate outside of Fiverr in order to circumvent or abuse the Fiverr messaging system or Fiverr platform is not permitted," but "Any necessary exchange of personal information required to continue a service may be exchanged within the Order Page," and "All information and file exchanges must be performed exclusively on the Site."
+- Fiverr's off-platform policy (help.fiverr.com/hc/en-us/articles/12792122691601) says to use Fiverr's platform exclusively and to avoid sharing passwords.
+- Gig guidelines (help.fiverr.com/hc/en-us/articles/360011421218): "If your service requires contact details or login credentials for an external site, mention this in the Gig requirements section." Personal contact details in the gig or its media can get the gig removed.
+
+### 12.6 Shared Access communication method: **compliant, not blocked**
+
+Sending the founder's Etsy account email so the buyer can send the Etsy invite is a necessary exchange required to perform the service, and Fiverr's ToS 8.1 explicitly allows that within the Order Page. It stays inside Fiverr if done exactly like this:
+
+1. The email is **never** placed in the gig title, description, FAQ, requirements, gallery images, or any pre-order message. It is sent only **after the order is placed**, in the **Fiverr order chat**.
+2. The message states its single purpose: to receive Etsy's Shared Access invite for this order. Use a dedicated Etsy-only address (not a personal or general contact address), with 2FA enabled on that Etsy account (`VALIDATION_GATE.md` §23.3).
+3. No phone number, no third-party messaging app, no request to talk elsewhere. All communication and file exchange stays in the Fiverr order chat.
+4. The requirements text (Question 4, option A) already tells the buyer that the email will arrive in the order chat, which satisfies Fiverr's "mention this in the Gig requirements section" guidance.
+
+**Not tested:** whether Fiverr's chat filter masks or blocks an email address in a message could not be checked without a live order. If it does, that order uses the already-approved fallback (option B: the buyer publishes from the ready-to-copy sheet, no email needed). Do not move the exchange off Fiverr.
+
+### 12.7 Remaining human-only actions
+
+1. Log in to Fiverr and create the gig in the editor: publish is a manual action (this task does not publish).
+2. Choose the **category/subcategory** in the editor. `VALIDATION_GATE.md` §22.3/§22.8 names eBay listing / Etsy listing / cross-listing placement; the exact menu path is not verifiable without the seller editor, and the choice is locked after publishing. Prefer the subcategory that matches the existing cross-listing gigs; if none does, ask Fiverr Support before publishing rather than guessing.
+3. Enter the settings from this section: Revisions = 1 on all packages; delivery = 5 / 6 / 7 days; Gig extras off.
+4. If the editor rejects any package name/description, tag, or FAQ length (12.4 UNVERIFIED rows), shorten the text without changing meaning.
+5. Create the gallery image(s) from section 7 (text only, no eBay/Etsy logos).
+6. Create the dedicated Etsy-only account (2FA on) for Shared Access before the first order (12.6).
+7. Decide whether to keep 5 / 6 / 7 or knowingly change to 3 / 4 / 5 (12.3).
